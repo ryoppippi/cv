@@ -9,6 +9,7 @@ Engineer
 <a href="m.ryoppippi@gmail.com">m.ryoppippi@gmail.com</a>
 | <a href="https://s.ryoppippi.com/portfolio">Portfolio</a>
 | <a href="https://www.linkedin.com/in/ryoppippi/">LinkedIn</a>
+| <a href="https://www.linkedin.com/in/ryoppippi/">LinkedIn</a>
 </div>
 
 ## Interests
@@ -60,12 +61,12 @@ Worked in several projects:
 __Research Internship, Digital Garage [DG Lab](https://www.dglab.com/en/)__
 
 - Worked with Tabelog, a restaurant reviewing service
-- Developed a system that classifies good-looking and bad-looking dish photos.
+- Developed a system that classifies good-looking and bad-looking dish photos
 
 `Aug 2017`
 __Engineer Internship, [Line Corp](https://line.me/en/)__
 
-- Developed a chatbot that recognizes the emotional moments in a group conversation.
+- Developed a chatbot that recognizes the emotional moments in a group conversation
 
 ## Computing Skills
  - Frontend:	HTML, CSS, Javascript, Typescript, Angular, React, Vue
