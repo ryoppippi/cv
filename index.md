@@ -9,7 +9,7 @@ Engineer
 <a href="m.ryoppippi@gmail.com">m.ryoppippi@gmail.com</a>
 | <a href="https://s.ryoppippi.com/portfolio">Portfolio</a>
 | <a href="https://www.linkedin.com/in/ryoppippi/">LinkedIn</a>
-| <a href="https://www.linkedin.com/in/ryoppippi/">LinkedIn</a>
+| <a href="https://www.github.com/ryoppippi/">Github</a>
 </div>
 
 ## Interests
