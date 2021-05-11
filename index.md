@@ -45,13 +45,13 @@ __Shiba Junior & Senior High School, Japan__
 `Oct 2018 - now`
 __Co-Founder and Chief Research Officer (CRO), [QuantumCore Inc.](https://www.qcore.co.jp/)__
 
-QuantumCore is a technology company specialized to Reservoir Computing (RC).  
-RC is machine learning model for time series data, and it runs faster and more accurate than traditional deep learning models.  
-I worked several projects.  
+QuantumCore is a technology company specialized in Reservoir Computing (RC).  
+RC is machine learning model for time series data, and it runs faster and more accurately than traditional deep learning models.  
+Worked in several projects: 
 
  - Implemented the core algorithm, Qore, to the lightweight devices
  - Developed algorithms for speaker detection and motion detection
- - Developed some web services, including Sloos, a note taking service
+ - Developed some web services, including [Sloos](https://prtimes.jp/main/html/rd/p/000000017.000039630.html), a note taking service
  - Adopted "Microsoft for Startups"
  - Won a business contest
 
@@ -78,7 +78,7 @@ __Engineer Internship, [Line Corp](https://line.me/en/)__
 
 ## Human Languages
  - Japanese	-	Native
- - English	-	IELTS 6.5(2018)
+ - English	-	IELTS 6.5 (2018)
 
 
 ## Publications
@@ -112,8 +112,6 @@ Culture Staff
 `2019`
 __ICU Excellence in Research Award__
 
-`2018`
-European Yo-yo Championship Open Division 3rd
 
 `2016`
 __[ICU Dream Competition Silver Award](https://www.icualumni.com/news/4548)__
