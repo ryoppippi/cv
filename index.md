@@ -45,7 +45,9 @@ __Shiba Junior & Senior High School, Japan__
 `Oct 2018 - now`
 __Co-Founder and Chief Research Officer (CRO), [QuantumCore Inc.](https://www.qcore.co.jp/)__
 
-QuantumCore is a technology company specialized to Reservoir Computing (RC). RC is machine learning model for time series data, and it runs faster and more accurate than traditional deep learning models.
+QuantumCore is a technology company specialized to Reservoir Computing (RC).  
+RC is machine learning model for time series data, and it runs faster and more accurate than traditional deep learning models.  
+I worked several projects.  
 
  - Implemented the core algorithm, Qore, to the lightweight devices
  - Developed algorithms for speaker detection and motion detection
@@ -57,7 +59,8 @@ QuantumCore is a technology company specialized to Reservoir Computing (RC). RC 
 `June 2018`
 __Research Internship, Digital Garage [DG Lab](https://www.dglab.com/en/)__
 
-- Worked with Tabelog, a restaurant reviewing service, and developed a system that classifies good-looking and bad-looking dish photos.
+- Worked with Tabelog, a restaurant reviewing service
+- Developed a system that classifies good-looking and bad-looking dish photos.
 
 `Aug 2017`
 __Engineer Internship, [Line Corp](https://line.me/en/)__
@@ -73,7 +76,7 @@ __Engineer Internship, [Line Corp](https://line.me/en/)__
  - Visualization:	Processing, openFrameworks, D3.js
  - Cloud:	AWS, Azure
 
- ## Human Languages
+## Human Languages
  - Japanese	-	Native
  - English	-	IELTS 6.5(2018)
 ## Publications
