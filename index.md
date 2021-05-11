@@ -2,7 +2,7 @@
 layout: cv
 title: Ryotaro Kimura's CV
 ---
-# Ryotaro Miura
+# Ryotaro Kimura
 Engineer
 
 <div id="webaddress">
