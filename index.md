@@ -79,6 +79,8 @@ __Engineer Internship, [Line Corp](https://line.me/en/)__
 ## Human Languages
  - Japanese	-	Native
  - English	-	IELTS 6.5(2018)
+
+
 ## Publications
 `2019`
 ***Ryotaro Miura***, Lukáš Pichl, Taisei Kaizoji  
@@ -108,31 +110,31 @@ Culture Staff
 ## Awards and Honors
 
 `2019`
-ICU Excellence in Research Award
+__ICU Excellence in Research Award__
 
 `2018`
 European Yo-yo Championship Open Division 3rd
 
 `2016`
-[ICU Dream Competition Silver Award](https://www.icualumni.com/news/4548)
+__[ICU Dream Competition Silver Award](https://www.icualumni.com/news/4548)__
 
 
 ## Talks
 `2013`
-TEDxYouth@Tokyo 2013
+__TEDxYouth@Tokyo 2013__
 
 
 ## Volunteering
 `2017 - 2018`
 __Visiting Student Abroad Representative__
-- Wrote blog posts and attended talk events to spread my experience in Edinburgh.
+- Wrote blog posts and attended talk events to spread my experience in Edinburgh
 
 `2016 - 2018`
 __Rakugo Performance__  
 - Performed Japanese traditional comedy routine, Rakugo(落語)
-- Founded International Christian University Rakugo Club and organized as the president.
-- Performed for nursing home residents, primary school students, and so on.
-- Performed at the University of Edinburgh, the University of Stirling, an old cathedral in Edinburgh, UK, and so on.
+- Founded International Christian University Rakugo Club and organized as the president
+- Performed for nursing home residents, primary school students, and so on
+- Performed at universities and public buildings in Edinburgh UK with the Japanese Consulate
 
 `2016 - 2018`
 __Science Communication Activities__
