@@ -131,7 +131,7 @@ __Visiting Student Abroad Representative__
 
 `2016 - 2018`
 __Rakugo Performance__  
-- Performed Japanese traditional comedy routine, Rakugo(落語)
+- Performed Japanese traditional comedy routine, Rakugo (落語)
 - Founded International Christian University Rakugo Club and organized as the president
 - Performed for nursing home residents, primary school students, and so on
 - Performed at universities and public buildings in Edinburgh UK with the Japanese Consulate
