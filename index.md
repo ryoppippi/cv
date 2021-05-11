@@ -13,7 +13,7 @@ Engineer
 </div>
 
 ## Interests
-Human Computer Interaction and Intelligent machine
+Human Computer Interaction and Intelligent Machines
 
 ## Education
 
