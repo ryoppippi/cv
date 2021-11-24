@@ -69,12 +69,12 @@ __Engineer Internship, [Line Corp](https://line.me/en/)__
 - Developed a chatbot that recognizes the emotional moments in a group conversation
 
 ## Computing Skills
- - Frontend:	HTML, CSS, Javascript, Typescript, Angular, React, Vue
- - Backend:	Flask, FastAPI, Rocket, MySQL, Redis
- - Machine Learning:	Numpy, Pandas, Scipy, Tensorflow2.x, Pytorch, ml5.js
+ - Frontend:	HTML, CSS, JavaScript, TypeScript, Angular, React, Vue, Svelte
+ - Backend:	Flask, FastAPI, MySQL, Redis
+ - Machine Learning:	Numpy, Pandas, Scipy, Tensorflow2.x, Pytorch
  - Language:	Python, C, C++, Rust, Matlab, Octave, Julia, Nim, Java, SQL, Go
  - Hardware: Arduino, Raspberry Pi, Jetson Nano, M5Stack
- - Visualization:	Processing, openFrameworks, D3.js
+ - Creative Coding:	Processing, openFrameworks, D3.js, AFrame, Three.js, p5.js
  - Cloud:	AWS, Azure
 
 ## Human Languages
