@@ -6,7 +6,7 @@ title: Ryotaro Kimura's CV
 Engineer
 
 <div id="webaddress">
-<a href="m.ryoppippi@gmail.com">m.ryoppippi@gmail.com</a>
+  m.ryoppippi at gmail.com
 | <a href="https://s.ryoppippi.com/portfolio">Portfolio</a>
 | <a href="https://www.linkedin.com/in/ryoppippi/">LinkedIn</a>
 | <a href="https://www.github.com/ryoppippi/">Github</a>
@@ -19,6 +19,8 @@ Human Computer Interaction and Intelligent Machines
 
 `Apr 2022 - `
 __Ph.D candidate, University of Tokyo, Japan__
+
+- Applied Computer Science 
 
 `Apr 2019 - Mar 2022`
 __M.A.S. , University of Tokyo, Japan__
