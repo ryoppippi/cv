@@ -7,7 +7,6 @@ Engineer
 
 <div id="webaddress">
   m.ryoppippi at gmail.com
-| <a href="https://s.ryoppippi.com/portfolio">Portfolio</a>
 | <a href="https://www.linkedin.com/in/ryoppippi/">LinkedIn</a>
 | <a href="https://www.github.com/ryoppippi/">Github</a>
 </div>
