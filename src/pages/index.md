@@ -20,7 +20,7 @@ Human Computer Interaction and Intelligent Machines
 ## Education
 
 `Apr 2022 - `
-**Ph.D candidate, University of Tokyo, Japan**
+**Ph.D. candidate, University of Tokyo, Japan**
 
 - Applied Computer Science
 
