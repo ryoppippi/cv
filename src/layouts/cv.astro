@@ -1,0 +1,19 @@
+---
+import "@/css/davewhipp.css";
+// import "@/css/kjhealy.css";
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="content">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>
