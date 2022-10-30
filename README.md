@@ -19,10 +19,10 @@ npm run build
 
 Please refer to [astro deploy](https://docs.astro.build/en/guides/deploy/github/).
 
-### Author
+## Author
 
 [@ryoppippi](https://github.com/ryoppippi)
 
-### License
+## License
 
 [MIT License](https://github.com/ryoppippi/cv/blob/master/LICENSE)
