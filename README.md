@@ -15,6 +15,10 @@ npm i
 npm run build
 ```
 
+## Deploy to public
+
+Please refer to [astro deploy](https://docs.astro.build/en/guides/deploy/github/).
+
 ### Author
 
 [@ryoppippi](https://github.com/ryoppippi)
