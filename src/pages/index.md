@@ -89,15 +89,24 @@ Worked in several projects:
 
 ## Publications
 
+### Conference Proceedings
+
 `2019`
 **_Ryotaro Miura_**, Lukáš Pichl, Taisei Kaizoji  
 [Artificial Neural Networks for Realized Volatility Prediction in Cryptocurrency Time Series](https://link.springer.com/chapter/10.1007/978-3-030-22796-8_18)  
-**_ISNN 2019: Advances in Neural Networks_** 2019 (Paper)
+**_ISNN 2019: Advances in Neural Networks 2019_**  
 
 `2019`
 Keisuke Shiro, **_Ryotaro Miura_**, Changyo Han and Jun Rekimoto  
 [An Intuitive Interface for Digital Synthesizer by Pseudo-intention Learning](https://dl.acm.org/doi/10.1145/3356590.3356598)  
-**_Audio Mostly_** 2019 (Paper)
+**_Audio Mostly 2019_**   
+
+### Posters
+`2022`
+**_Ryotaro Kimura_**, Jun Rekimoto  
+[Prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously](https://sa2022.siggraph.org/en/presentation/?id=pos_179&sess=sess189)
+**_SIGGRAPH Asia 2022_**  
+
 
 ## Teaching Experience
 
