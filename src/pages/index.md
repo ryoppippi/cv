@@ -104,7 +104,7 @@ Keisuke Shiro, **_Ryotaro Miura_**, Changyo Han and Jun Rekimoto
 ### Posters
 `2022`
 **_Ryotaro Kimura_**, Jun Rekimoto  
-[Prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously](https://sa2022.siggraph.org/en/presentation/?id=pos_179&sess=sess189)
+[Prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously](https://dl.acm.org/doi/10.1145/3550082.3564187)
 **_SIGGRAPH Asia 2022_**  
 
 
