@@ -9,8 +9,9 @@ Engineer
 
 <div id="webaddress">
   m.ryoppippi at gmail.com
-| <a href="https://www.linkedin.com/in/ryoppippi/">LinkedIn</a>
-| <a href="https://www.github.com/ryoppippi/">Github</a>
+| <a href="http://ryoppippi.com" target="_blank">Home</a>
+| <a href="https://www.linkedin.com/in/ryoppippi/" target="_blank">LinkedIn</a>
+| <a href="https://www.github.com/ryoppippi/" target="_blank">Github</a>
 </div>
 
 ## Interests
@@ -61,6 +62,12 @@ Worked in several projects:
 - Adopted "Microsoft for Startups"
 - Won a business contest
 
+`July 2022 - now`
+**Engineer, [Eightis Inc.](https://eightis.co.jp)**
+
+`May 2021 - now`
+**Instructor, [AI Academy Inc.](https://aiacademy.jp)**
+
 `June 2018`
 **Research Internship, Digital Garage [DG Lab](https://www.dglab.com/en/)**
 
@@ -72,15 +79,15 @@ Worked in several projects:
 
 - Developed a chatbot that recognizes the emotional moments in a group conversation
 
-## Computing Skills
+## Technical Skills
 
-- Frontend: HTML, CSS, JavaScript, TypeScript, Angular, React, Vue, Svelte
+- Frontend: HTML, CSS, JavaScript, TypeScript, Angular, React, Svelte
 - Backend: Flask, FastAPI, MySQL, Redis
-- Machine Learning: Numpy, Pandas, Scipy, Tensorflow2.x, Pytorch
-- Language: Python, C, C++, Rust, Matlab, Octave, Julia, Nim, Java, SQL, Go
+- Machine Learning: Numpy, Tensorflow2.x, Pytorch, OpenAI API
+- Language: Python, Zig, C, C++, Octave, Java, SQL, Go, Rust
 - Hardware: Arduino, Raspberry Pi, Jetson Nano, M5Stack
-- Creative Coding: Processing, openFrameworks, D3.js, AFrame, Three.js, p5.js
-- Cloud: AWS, Azure
+- Creative Coding: Processing, D3.js, Unity, AFrame, Three.js, p5.js
+- Cloud: Azure, Cloudflare, AWS
 
 ## Human Languages
 
@@ -94,19 +101,19 @@ Worked in several projects:
 `2019`
 **_Ryotaro Miura_**, Lukáš Pichl, Taisei Kaizoji  
 [Artificial Neural Networks for Realized Volatility Prediction in Cryptocurrency Time Series](https://link.springer.com/chapter/10.1007/978-3-030-22796-8_18)  
-**_ISNN 2019: Advances in Neural Networks 2019_**  
+**_ISNN 2019: Advances in Neural Networks 2019_**
 
 `2019`
 Keisuke Shiro, **_Ryotaro Miura_**, Changyo Han and Jun Rekimoto  
 [An Intuitive Interface for Digital Synthesizer by Pseudo-intention Learning](https://dl.acm.org/doi/10.1145/3356590.3356598)  
-**_Audio Mostly 2019_**   
+**_Audio Mostly 2019_**
 
 ### Posters
+
 `2022`
 **_Ryotaro Kimura_**, Jun Rekimoto  
-[Prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously](https://dl.acm.org/doi/10.1145/3550082.3564187)
-**_SIGGRAPH Asia 2022_**  
-
+[Prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously](https://dl.acm.org/doi/10.1145/3550082.3564187)  
+**_SIGGRAPH Asia 2022_**
 
 ## Teaching Experience
 
