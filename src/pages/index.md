@@ -56,12 +56,6 @@ QuantumCore is a technology company specialized in Reservoir Computing (RC).
 RC is machine learning model for time series data, and it runs faster and more accurately than traditional deep learning models.  
 Worked in several projects:
 
-- Implemented the core algorithm, Qore, to the lightweight devices
-- Developed algorithms for speaker detection and motion detection
-- Developed some web services, including [Sloos](https://prtimes.jp/main/html/rd/p/000000017.000039630.html), a note taking service
-- Adopted "Microsoft for Startups"
-- Won a business contest
-
 `July 2022 - now`
 **Engineer, [Eightis Inc.](https://eightis.co.jp)**
 
