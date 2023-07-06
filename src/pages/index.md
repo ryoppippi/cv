@@ -49,18 +49,18 @@ Human Computer Interaction and Intelligent Machines
 
 ## Industrial Experience
 
-`Oct 2018 - now`
-**Co-Founder and Chief Research Officer (CRO), [QuantumCore Inc.](https://www.qcore.co.jp/)**
-
-QuantumCore is a technology company specialized in Reservoir Computing (RC).  
-RC is machine learning model for time series data, and it runs faster and more accurately than traditional deep learning models.  
-Worked in several projects:
-
 `July 2022 - now`
 **Engineer, [Eightis Inc.](https://eightis.co.jp)**
 
 `May 2021 - now`
 **Instructor, [AI Academy Inc.](https://aiacademy.jp)**
+
+`Oct 2018 - June 2023`
+**Co-Founder and Chief Research Officer (CRO), [QuantumCore Inc.](https://www.qcore.co.jp/)**
+
+QuantumCore is a technology company specialized in Reservoir Computing (RC).  
+RC is machine learning model for time series data, and it runs faster and more accurately than traditional deep learning models.  
+Worked in several projects:
 
 `June 2018`
 **Research Internship, Digital Garage [DG Lab](https://www.dglab.com/en/)**
