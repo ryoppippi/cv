@@ -49,11 +49,11 @@ Human Computer Interaction and Intelligent Machines
 
 ## Industrial Experience
 
-`July 2022 - now`
-**Engineer, [Eightis Inc.](https://eightis.co.jp)**
-
 `May 2021 - now`
 **Instructor, [AI Academy Inc.](https://aiacademy.jp)**
+
+`July 2022 - Aug 2023`
+**Engineer, [Eightis Inc.](https://eightis.co.jp)**
 
 `Oct 2018 - June 2023`
 **Co-Founder and Chief Research Officer (CRO), [QuantumCore Inc.](https://www.qcore.co.jp/)**
