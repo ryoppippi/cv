@@ -49,6 +49,9 @@ Human Computer Interaction and Intelligent Machines
 
 ## Industrial Experience
 
+`Jan 2024 - now`
+**Engineer, [NOT A HOTEL Inc.](https://notahotel.com/)**
+
 `Apr 2022 - now`
 **Research Assistant, [University of Tokyo](https://www.u-tokyo.ac.jp/en/)**
 
