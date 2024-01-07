@@ -49,6 +49,9 @@ Human Computer Interaction and Intelligent Machines
 
 ## Industrial Experience
 
+`Apr 2022 - now`
+**Research Assistant, [University of Tokyo](https://www.u-tokyo.ac.jp/en/)**
+
 `May 2021 - now`
 **Instructor, [AI Academy Inc.](https://aiacademy.jp)**
 
