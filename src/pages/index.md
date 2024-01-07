@@ -63,7 +63,7 @@ Human Computer Interaction and Intelligent Machines
 
 QuantumCore is a technology company specialized in Reservoir Computing (RC).  
 RC is machine learning model for time series data, and it runs faster and more accurately than traditional deep learning models.  
-Worked in several projects:
+Worked in several projects.
 
 `June 2018`
 **Research Internship, Digital Garage [DG Lab](https://www.dglab.com/en/)**
