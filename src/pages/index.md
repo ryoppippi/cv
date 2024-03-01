@@ -49,7 +49,7 @@ Human Computer Interaction and Intelligent Machines
 
 ## Industrial Experience
 
-`Jan 2024 - now`
+`Jan 2024 - Mar 2024`
 **Engineer, [NOT A HOTEL Inc.](https://notahotel.com/)**
 
 `Apr 2022 - now`
