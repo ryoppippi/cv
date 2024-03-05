@@ -6,13 +6,16 @@ Modified to using [astro](https://astro.build) instead of [jekyll](https://jekyl
 ## Create your own CV
 
 Simply fork this repository  
-and edit `src/pages/index.md`.
+and edit `index.md`.
+
+## Requirements
+
+- [Deno](https://deno.land)
 
 ## Build
 
 ```sh
-npm i
-npm run build
+deno task build
 ```
 
 ## Deploy to public
