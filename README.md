@@ -1,7 +1,7 @@
 # markdown-cv
 
 Fork from [elipapa/markdown-cv](https://github.com/elipapa/markdown-cv).  
-Modified to using [astro](https://astro.build) instead of [jekyll](https://jekyllrb.com/).
+Modified to using [lume](https://lume.land/) instead of [jekyll](https://jekyllrb.com/).
 
 ## Create your own CV
 
@@ -20,7 +20,7 @@ deno task build
 
 ## Deploy to public
 
-Please refer to [astro deploy](https://docs.astro.build/en/guides/deploy/github/).
+Please refer to [lume deployment page](https://lume.land/docs/advanced/deployment/#cloudflare-pages).
 
 ## Author
 
