@@ -1,5 +1,4 @@
 ---
-layout: "@/layouts/cv.astro"
 title: Ryotaro Kimura's CV
 ---
 

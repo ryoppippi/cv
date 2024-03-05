@@ -23,3 +23,5 @@ packages/integrations/**/.netlify/
 
 # exclude IntelliJ/WebStorm stuff
 .idea
+
+_cache/

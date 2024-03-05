@@ -1,19 +1,14 @@
----
-import "@/css/davewhipp.css";
-// import "@/css/kjhealy.css";
-const { frontmatter } = Astro.props;
----
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="/style.css"/>
     <link rel="icon" href="/favicon.ico" />
-    <title>{frontmatter.title}</title>
+    <title>{{ title }}</title>
   </head>
   <body>
     <div id="main">
       <div id="content">
-        <slot />
+        {{ content }}
       </div>
     </div>
   </body>
