@@ -1,27 +1,10 @@
-node_modules/
-dist/
-*.tsbuildinfo
 .DS_Store
-.vercel
-_site/
-scripts/smoke/*-main/
-scripts/memory/project/src/pages/
-*.log
-package-lock.json
-.turbo/
-.eslintcache
-
-# ignore top-level vscode settings
-/.vscode/settings.json
-
-# do not commit .env files or any files that end with `.env`
-*.env
-
-packages/astro/src/**/*.prebuilt.ts
-!packages/astro/vendor/vite/dist
-packages/integrations/**/.netlify/
-
-# exclude IntelliJ/WebStorm stuff
-.idea
-
-_cache/
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
