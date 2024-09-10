@@ -129,6 +129,8 @@ Culture Staff
 
 ## Talks
 
+`2024` **[Vimconf 2024](https://vimconf.org/2024/#menu-time-table)**
+
 `2013` **TEDxYouth@Tokyo 2013**
 
 ## Volunteering
