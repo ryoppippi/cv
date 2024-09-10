@@ -166,6 +166,10 @@ Culture Staff
 - Worked as a leader
 - Taught science to primary school students
 
+## OTHER DETAILS
+**Visa Status**
+- Already have work permission without any restrictions in UK (spouse visa)
+
 <!-- ### Footer
 
 Last updated: May 2013 -->
