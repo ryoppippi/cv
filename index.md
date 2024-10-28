@@ -74,11 +74,10 @@ Worked in several projects.
 
 ## Technical Skills
 
-- Frontend: Angular, React, Svelte, SvelteKit
-- Backend: Flask, FastAPI, MySQL, Redis
-- Machine Learning: Numpy, Tensorflow2.x, Pytorch, OpenAI API
-- Language: HTML, CSS, JavaScript, TypeScript, Python, Zig, C, C++, Octave,
-  Java, SQL
+- Frontend: Svelte, SvelteKit, Angular, React
+- Backend: Flask, FastAPI, MySQL, PostgreSQL, Redis, SQLite
+- Machine Learning: Numpy, JAX, Tensorflow2.x, Pytorch, OpenAI API
+- Language: HTML, CSS, JavaScript, TypeScript, Python, Zig, C, C++, Octave, SQL, Lua, Go, Rust
 - Hardware: Arduino, Raspberry Pi, Jetson Nano, M5Stack
 - Cloud: Azure, Cloudflare, AWS
 
