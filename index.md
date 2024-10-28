@@ -15,11 +15,11 @@ Engineer
 
 ## Interests
 
-Human Computer Interaction and Intelligent Machines
+Human Computer Interaction, Intelligent Machines, Web Development
 
 ## Education
 
-`Apr 2022 -` **Ph.D. candidate, University of Tokyo, Japan**
+<!-- `Apr 2022 -` **Ph.D. candidate, University of Tokyo, Japan** -->
 
 - Applied Computer Science
 
