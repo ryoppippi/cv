@@ -21,7 +21,7 @@ Human Computer Interaction, Intelligent Machines, Web Development
 
 <!-- `Apr 2022 -` **Ph.D. candidate, University of Tokyo, Japan** -->
 
-- Applied Computer Science
+<!-- - Applied Computer Science -->
 
 `Apr 2019 - Mar 2022` **M.A.S. , University of Tokyo, Japan**
 
@@ -74,7 +74,7 @@ Worked in several projects.
 
 ## Technical Skills
 
-- Frontend: Svelte, SvelteKit, Angular, React
+- Frontend: Svelte, SvelteKit, Angular, React, SolidJS
 - Backend: Flask, FastAPI, MySQL, PostgreSQL, Redis, SQLite
 - Machine Learning: Numpy, JAX, Tensorflow2.x, Pytorch, OpenAI API
 - Language: HTML, CSS, JavaScript, TypeScript, Python, Zig, C, C++, Octave, SQL, Lua, Go, Rust
