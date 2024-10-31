@@ -130,6 +130,8 @@ Culture Staff
 
 `2024` **[Vimconf 2024](https://vimconf.org/2024/#menu-time-table)**
 
+`2024` **[neovimconf.live 2024](https://neovimconf.live/speakers/ryo)**
+
 `2013` **TEDxYouth@Tokyo 2013**
 
 ## Volunteering
