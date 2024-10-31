@@ -127,6 +127,8 @@
 
   == Other Information
 
+  === Visa Status
+
   Work permission without restrictions in UK (spouse visa)
 ],
 )
