@@ -56,10 +56,9 @@ Human Computer Interaction, Intelligent Machines, Web Development
 `Oct 2018 - June 2023` **Co-Founder and Chief Research Officer,
 [QuantumCore Inc.](https://www.qcore.co.jp/)**
 
-QuantumCore is a technology company specialized in Reservoir Computing (RC).\
-RC is machine learning model for time series data, and it runs faster and more
-accurately than traditional deep learning models.\
-Worked in several projects.
+- Developed core-algorithms for Reservoir Computing
+- Developed and operated a note-taking app called [sloos](https://sloos.qcore.co.jp/). I developed both backend and web frontend.
+- Developed a no-code tool for Reservoir Computing
 
 `June 2018` **Research Internship, Digital Garage
 [DG Lab](https://www.dglab.com/en/)**
