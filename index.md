@@ -56,9 +56,11 @@ Human Computer Interaction, Intelligent Machines, Web Development
 `Oct 2018 - June 2023` **Co-Founder and Chief Research Officer,
 [QuantumCore Inc.](https://www.qcore.co.jp/)**
 
-- Developed core-algorithms for Reservoir Computing
-- Developed and operated a note-taking app called [sloos](https://sloos.qcore.co.jp/). I developed both backend and web frontend.
+- Worked on core-algorithms for Reservoir Computing
 - Developed a no-code tool for Reservoir Computing
+- Developed and operated a note-taking app called [sloos](https://sloos.qcore.co.jp/). 
+  - Developed both backend and web frontend
+  - Sloos has been installed in over 1000 companies in Japan
 
 `June 2018` **Research Internship, Digital Garage
 [DG Lab](https://www.dglab.com/en/)**
