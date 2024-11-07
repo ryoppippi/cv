@@ -41,10 +41,8 @@
   _International Christian University_\
   #term[Apr 2015 --- May 2019][Tokyo, Japan]
 
-  - Information Science Major, Economics Minor
-  - GPA: 3.86
-  - Dean's List recipient
-  - Thesis: Predicting Cryptocurrency Time Series Volatility using ML Methods
+  - Information Science Major, Economics Minor 
+  - GPA: 3.86/4
 
   === Exchange Program \
   _The University of Edinburgh_\
