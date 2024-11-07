@@ -8,10 +8,10 @@ Engineer
 
 <div id="webaddress">
   m.ryoppippi at gmail.com
-| <a href="http://ryoppippi.com" target="_blank">Home</a>
+| <a href="https://cdn.jsdelivr.net/gh/ryoppippi/cv@typst-build/ryotaro_kimura.pdf", target="_blank">PDF Version</a>
+| <a href="http://ryoppippi.com" target="_blank">ryoppippi.com</a>
 | <a href="https://www.linkedin.com/in/ryoppippi/" target="_blank">LinkedIn</a>
 | <a href="https://www.github.com/ryoppippi/" target="_blank">Github</a>
-  <a href="https://cdn.jsdelivr.net/gh/ryoppippi/cv@typst-build/ryotaro_kimura.pdf", target="_blank">PDF</a>
 </div>
 
 ## Interests
