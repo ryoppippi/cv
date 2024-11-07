@@ -12,13 +12,7 @@
   [
   == Experience
 
-  === Research Assistant \
-  _University of Tokyo_\
-  #term[Apr 2022 --- Present][Tokyo, Japan | Remote]
 
-  === Instructor \
-  _AI Academy Inc._\
-  #term[May 2021 --- Present][Remote]
 
   === Engineer \
   _NOT A HOTEL Inc._\
