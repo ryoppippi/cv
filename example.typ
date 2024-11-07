@@ -94,10 +94,6 @@
   - #link("https://neovimconf.live/speakers/ryo")[neovimconf.live 2024]
   - TEDxYouth\@Tokyo 2013
 
-  == Awards
-
-  - ICU Excellence in Research Award (2019)
-  - #styled-link("https://www.icualumni.com/news/4548")[ICU Dream Competition Silver Award] (2016)
 
   == Languages
 
