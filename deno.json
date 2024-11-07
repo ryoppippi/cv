@@ -1,7 +1,7 @@
 {
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-    "build": "deno task lume",
+    "build": "deno task lume && cp ./_redirects ./dist",
     "dev": "deno task lume -s"
   },
   "compilerOptions": {
