@@ -99,6 +99,6 @@
 
   === Visa Status
 
-  Work permission without restrictions in UK (spouse visa)
+  Already have a work permission without restrictions in UK (*spouse visa*)
 ],
   )
