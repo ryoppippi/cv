@@ -29,19 +29,6 @@
   - Specialized in Reservoir Computing (RC) for time series data
   - Led projects implementing faster and more accurate ML models than traditional deep learning
 
-  === Research Intern \
-  _Digital Garage (DG Lab)_\
-  #term[June 2018][Tokyo, Japan]
-
-  // - Developed photo classification system for Tabelog restaurant review service
-  // - Implemented dish photo quality assessment system
-
-  === Engineer Intern \
-  _Line Corp_\
-  #term[Aug 2017][Tokyo, Japan]
-
-  // - Developed emotional recognition chatbot for group conversations
-
   == Education
 
   === Master of Applied Science \
