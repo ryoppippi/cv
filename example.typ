@@ -4,7 +4,7 @@
   name: "Ryotaro Kimura",
   links: (
   (name: "email", link: "mailto:m.ryoppippi@gmail.com"),
-  (name: "website", link: "http://ryoppippi.com", display: "Home"),
+  (name: "website", link: "http://ryoppippi.com", display: "ryoppippi.com"),
   (name: "github", link: "https://www.github.com/ryoppippi/", display: "@ryoppippi"),
   (name: "linkedin", link: "https://www.linkedin.com/in/ryoppippi/", display: "Ryotaro Kimura"),
 ),
