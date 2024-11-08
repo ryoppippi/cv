@@ -84,7 +84,7 @@
 
   English (IELTS 6.5) / Japanese (Native)
 
-  == Speaking
+  == #link("https://ryoppippi.com/talks")[Talks]
 
   - #link("https://vimconf.org/2024/#menu-time-table")[VimConf 2024]
   - #link("https://neovimconf.live/speakers/ryo")[neovimconf.live 2024]
