@@ -19,7 +19,7 @@
 
   - Teaching and consulting machine learning, web development, and basic Python programming
   - Involved in the development of product management systems using TypeScript, React, StoryBook and TailwindCSS running on AWS
-  - Developed data-vizualization tools using D3.js, SvelteKit, PostgreSQL, and Cloudflare Workers
+  - Worked on data-visualization tools using D3.js, SvelteKit, PostgreSQL, and Cloudflare Workers
 
   === Cloudflare Engineer \
   _NOT A HOTEL Inc._\
@@ -31,7 +31,7 @@
   _Eightis Inc._\
   #term[July 2022 --- Aug 2023][Japan | Remote]
 
-  - Launced and Developed `Shintai`: a web and iOS based platform for body-alignment training
+  - Launched and developed `Shintai`: a web and iOS based platform for body-alignment training
     - Web: SvelteKit, Cloudflare Workers and PostgreSQL
     - iOS app: Swift, SwiftUI and Firebase authentication
     - Machine learning: fine-tuning of pose detection model and run on CoreML
@@ -43,14 +43,14 @@
   
   - Worked on #link("https://www.qcore.co.jp/")[`Qore`]: the core-algorithms to enhance Reservoir Computing(RC)
   - 2018 - 2019: Implement RC and data preprocessing algorithms originally written in Python to embeded devices using *C/C++*
-    - Achieved *120x faster training time* compared to LSTM and enabled deployment on embedded devices, including Raspberry Pi and M5Stack.
+    - Attained *120x faster training time* compared to LSTM and enabled deployment on embedded devices, including Raspberry Pi and M5Stack.
   - 2018 - 2023: Created and presented a dozens of PoCs using RC, mainly in the field of _time-series_, _audio processing_, and _image processing_
-  - 2020 - 2023: Launced, developed and operated `Sloos`: a minute-taking app for remote workers
+  - 2020 - 2023: Launched, developed and operated `Sloos`: a minute-taking app for remote workers
     - Applied speaker-detection algorithm with RC to automatically generate meeting minutes
-    - My _first experience_ of developing a full-stack application. Developed in a month with learning and launced the app on May 2020.
-    - Developed both backend and web frontend using Flask, Angular, MySQL and Azure App Directory
+    - My _first experience_ of developing a full-stack application. Developed in a month with learning and launched the app on May 2020.
+    - Built both backend and web frontend using Flask, Angular, MySQL and Azure App Directory
     - Achieved *over 1,000 installations* of the note-taking app, sloos, in companies across Japan.
-    - Achieved Microsoft for Startups partnership
+    - Won Microsoft for Startups partnership
   - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models
 
   == Education
