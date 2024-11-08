@@ -1,0 +1,6 @@
+[default]
+locale = 'en-gb'
+extend-ignore-re = [
+  "(?s)(#|//)\\s*spellchecker:off.*?\\n\\s*(#|//)\\s*spellchecker:on",
+  "(?Rm)^.*#\\s*spellchecker:disable-line$"
+]
