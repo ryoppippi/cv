@@ -47,9 +47,9 @@
   - 2018 - 2023: Created and presented a dozens of PoCs using RC, mainly in the field of _time-series_, _audio processing_, and _image processing_
   - 2020 - 2023: Launched, developed and operated `Sloos`: a minute-taking app for remote workers
     - Applied speaker-detection algorithm with RC to automatically generate meeting minutes
-    - My _first experience_ of developing a full-stack application. Developed in a month with learning and launched the app on May 2020.
+    - My _first experience_ of developing a full-stack application. Developed in a month with learning and launched the app on May 2020
     - Built both backend and web frontend using Flask, Angular, MySQL and Azure App Directory
-    - Achieved *over 1,000 installations* of the note-taking app, sloos, in companies across Japan.
+    - Achieved *over 1,000 installations* of the note-taking app, sloos, in companies across Japan
     - Won Microsoft for Startups partnership
   - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models
 
