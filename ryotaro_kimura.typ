@@ -19,7 +19,7 @@
 
   - Teaching and consulting machine learning, web development, and basic Python programming
   - Involved in the development of product management systems using TypeScript, React, StoryBook and TailwindCSS running on AWS
-  - Worked on data-visualization tools using D3.js, SvelteKit, PostgreSQL, and Cloudflare Workers
+  - Worked on data-visualisation tools using D3.js, SvelteKit, PostgreSQL, and Cloudflare Workers
 
   === Cloudflare Engineer \
   _NOT A HOTEL Inc._\
@@ -35,14 +35,14 @@
     - Web: SvelteKit, Cloudflare Workers and PostgreSQL
     - iOS app: Swift, SwiftUI and Firebase authentication
     - Machine learning: fine-tuning of pose detection model and run on CoreML
-  - Collaboration work with atheletes and trainers
+  - Collaboration work with athletes and trainers
 
   === *Co-Founder* and *Chief Research Officer* \
   _QuantumCore Inc._\
   #term[Oct 2018 --- June 2023][Tokyo, Japan | Remote]
   
   - Worked on #link("https://www.qcore.co.jp/")[`Qore`]: the core-algorithms to enhance Reservoir Computing(RC)
-  - 2018 - 2019: Implement RC and data preprocessing algorithms originally written in Python to embeded devices using *C/C++*
+  - 2018 - 2019: Implement RC and data preprocessing algorithms originally written in Python to embedded devices using *C/C++*
     - Attained *120x faster training time* compared to LSTM and enabled deployment on embedded devices, including Raspberry Pi and M5Stack.
   - 2018 - 2023: Created and presented a dozens of PoCs using RC, mainly in the field of _time-series_, _audio processing_, and _image processing_
   - 2020 - 2023: Launched, developed and operated `Sloos`: a minute-taking app for remote workers
@@ -76,9 +76,11 @@
 
   == Publications
 
+// spellchecker:off
   - #styled-link("https://link.springer.com/chapter/10.1007/978-3-030-22796-8_18")[Artificial Neural Networks for Realized Volatility Prediction in Cryptocurrency Time Series] ISNN 2019: Advances in Neural Networks 2019 (Full papers)
   - #styled-link("https://dl.acm.org/doi/10.1145/3356590.3356598")[An Intuitive Interface for Digital Synthesizer by Pseudo-intention Learning] Audio Mostly 2019 (Full papers)
   - #styled-link("https://dl.acm.org/doi/10.1145/3550082.3564187")[prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously] SIGGRAPH Asia 2022 (Poster)
+// spellchecker:on
 
   == Natural Languages
 
@@ -90,7 +92,7 @@
   - #link("https://neovimconf.live/speakers/ryo")[neovimconf.live 2024]
   - TEDxYouth\@Tokyo 2013
 
-  == Tech Comunity Activities
+  == Tech Community Activities
 
   #styled-link("https://vim-jp.org/")[vim-jp] / 
   #styled-link("https://github.com/svelte-jp")[Svelte Japan]
