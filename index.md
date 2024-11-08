@@ -71,7 +71,7 @@ Human Computer Interaction, Intelligent Machines, Web Development
 
 `Aug 2017` **Engineer Internship, [Line Corp](https://line.me/en/)**
 
-- Developed a chatbot that recognizes the emotional moments in a group
+- Developed a chatbot that recognises the emotional moments in a group
   conversation
 
 ## Technical Skills
@@ -93,6 +93,7 @@ Human Computer Interaction, Intelligent Machines, Web Development
 ### Conference Proceedings
 
 `2019` **_Ryotaro Miura_**, Lukáš Pichl, Taisei Kaizoji\
+<!-- spellchecker:disable-line -->
 [Artificial Neural Networks for Realized Volatility Prediction in Cryptocurrency Time Series](https://link.springer.com/chapter/10.1007/978-3-030-22796-8_18)\
 **_ISNN 2019: Advances in Neural Networks 2019_**
 
@@ -121,7 +122,7 @@ Culture Staff
 
 - Introduced Japanese culture and Japanese to students learning Japanese
 
-## Awards and Honors
+## Awards and Honours
 
 `2019` **ICU Excellence in Research Award**
 
@@ -145,7 +146,7 @@ Culture Staff
 `2016 - 2018` **Rakugo Performance**
 
 - Performed Japanese traditional comedy routine, Rakugo (落語)
-- Founded International Christian University Rakugo Club and organized as the
+- Founded International Christian University Rakugo Club and organised as the
   president
 - Performed for nursing home residents, primary school students, and so on
 - Performed at universities and public buildings in Edinburgh UK with the
