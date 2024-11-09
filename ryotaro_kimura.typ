@@ -18,9 +18,9 @@
   #term[May 2023 --- Present][Remote]
 
   - Teaching and consulting machine learning, web development, and basic Python programming
-    - Guided over *40 students*
-  - Involved in the development of product management systems using TypeScript, React, StoryBook and TailwindCSS running on AWS
-  - Worked on data-visualisation tools using D3.js, SvelteKit, PostgreSQL, and Cloudflare Workers
+      - Guided over *40 students*
+  - Built scalable product management systems using TypeScript, React, Storybook, and TailwindCSS, hosted on AWS.
+  - Engineered interactive data-visualisation tools using D3.js, SvelteKit, PostgreSQL
 
   === Cloudflare Engineer \
   _NOT A HOTEL Inc._\
@@ -44,13 +44,13 @@
   
   - Worked on #link("https://www.qcore.co.jp/")[`Qore`]: the core-algorithms to enhance Reservoir Computing(RC)
   - 2018 - 2019: Implement RC and data preprocessing algorithms originally written in Python to embedded devices using *C/C++*
-    - Attained *120x faster training time* compared to LSTM and enabled deployment on embedded devices, including Raspberry Pi and M5Stack.
+    - Achieved *120x faster training time* compared to LSTM and enabled deployment on embedded devices, including Raspberry Pi and M5Stack.
   - 2018 - 2023: Created and presented a dozens of PoCs using RC, mainly in the field of _time-series_, _audio processing_, and _image processing_
   - 2020 - 2023: Launched, developed and operated `Sloos`: a minute-taking app for remote workers
     - Applied speaker-detection algorithm with RC to automatically generate meeting minutes
     - My _first experience_ of developing a full-stack application. Developed in a month with learning and launched the app on May 2020
     - Built both backend and web frontend using Flask, Angular, MySQL and Azure App Directory
-    - Achieved *over 1,000 installations* of the note-taking app, sloos, in companies across Japan
+    - Reached *over 1,000 installations* of the note-taking app, sloos, in companies across Japan
     - Won Microsoft for Startups partnership
   - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models
 
