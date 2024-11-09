@@ -18,6 +18,7 @@
   #term[May 2023 --- Present][Remote]
 
   - Teaching and consulting machine learning, web development, and basic Python programming
+    - Guided over *40 students*
   - Involved in the development of product management systems using TypeScript, React, StoryBook and TailwindCSS running on AWS
   - Worked on data-visualisation tools using D3.js, SvelteKit, PostgreSQL, and Cloudflare Workers
 
