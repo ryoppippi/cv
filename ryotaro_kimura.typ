@@ -41,7 +41,7 @@
   === *Co-Founder* and *Chief Research Officer* \
   _QuantumCore Inc._\
   #term[Oct 2018 --- June 2023][Tokyo, Japan | Remote]
-  
+
   - Worked on #link("https://www.qcore.co.jp/")[`Qore`]: the core-algorithms to enhance Reservoir Computing(RC)
   - 2018 - 2019: Implement RC and data preprocessing algorithms originally written in Python to embedded devices using *C/C++*
     - Achieved *120x faster training time* compared to LSTM and enabled deployment on embedded devices, including Raspberry Pi and M5Stack.
@@ -50,7 +50,7 @@
     - Applied speaker-detection algorithm with RC to automatically generate meeting minutes
     - My _first experience_ of developing a full-stack application. Developed in a month with learning and launched the app on May 2020
     - Built both backend and web frontend using Flask, Angular, MySQL and Azure App Directory
-    - Reached *over 1,000 installations* of the note-taking app, sloos, in companies across Japan
+    - Reached *over 1,000 installations* in companies across Japan
     - Won Microsoft for Startups partnership
   - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models
 
