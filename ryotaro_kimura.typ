@@ -19,7 +19,7 @@
 
   - Teaching and consulting machine learning, web development, and basic Python programming
       - Guided over *40 students*
-  - Built scalable product management systems using TypeScript, React, Storybook, and TailwindCSS, hosted on AWS.
+  - Built scalable product management systems using TypeScript, React, Storybook, and TailwindCSS, hosted on AWS
   - Engineered interactive data-visualisation tools using D3.js, SvelteKit, PostgreSQL
 
   === Cloudflare Engineer \
