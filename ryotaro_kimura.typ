@@ -56,7 +56,7 @@
 
   == Education
 
-  === Master of Applied Science \
+  === Master of Applied Computer Science \
   _University of Tokyo_\
   #term[Apr 2019 --- Mar 2022][Tokyo, Japan]
 
