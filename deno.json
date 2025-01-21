@@ -1,4 +1,7 @@
 {
+  "tasks": {
+    "build": "deno run -ERW --allow-run ./scripts/build.ts"
+  },
   "workspace": [
     "./typst/",
     "./web"
