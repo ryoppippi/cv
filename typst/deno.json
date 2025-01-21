@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "typst": "deno run -RE --allow-run npm:typst",
+    "dev": "deno task typst watch ./ryotaro_kimura.typ",
+    "compile": "deno task typst compile ./ryotaro_kimura.typ"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}

@@ -12,7 +12,6 @@ jobs:
 
     - uses: crate-ci/typos@master
       with:
-        files: '*.{typ,md}'
         config: ./typos.toml
 
   secretlint:

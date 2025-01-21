@@ -1,15 +1,9 @@
 {
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-    "build": "deno task lume && cp ./_redirects ./dist",
-    "dev": "deno task lume -s"
+    "build": "deno run -ERW --allow-run ./scripts/build.ts"
   },
-  "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ]
-  },
-  "imports": {
-    "lume/": "https://deno.land/x/lume@v2.3.3/"
-  }
+  "workspace": [
+    "./typst/",
+    "./web"
+  ]
 }
