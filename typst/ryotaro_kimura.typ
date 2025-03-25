@@ -12,6 +12,11 @@
   [
   == Experience
 
+  === Open Source Developer \
+  _Wrtn technologies_\
+  #term[Mar 2025 --- Present][Remote]
+
+  - Developing *Agent OS*: OSS for creating AI agents using TypeScript
 
   === Freelance Engineer \
   _Self-Employed_\
