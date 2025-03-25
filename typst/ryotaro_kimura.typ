@@ -49,11 +49,10 @@
   - 2018 - 2023: Created and presented a dozens of PoCs using RC, mainly in the field of _time-series_, _audio processing_, and _image processing_
   - 2020 - 2023: Launched, developed and operated `Sloos`: a minute-taking app for remote workers
     - Applied speaker-detection algorithm with RC to automatically generate meeting minutes
-    - My _first experience_ of developing a full-stack application. Developed in a month with learning and launched the app on May 2020
     - Built both backend and web frontend using Flask, Angular, MySQL Azure App Directory, and PAY.JP
     - Reached *over 1,000 installations* in companies across Japan
     - Won Microsoft for Startups partnership
-  - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models using SvelteKit, Auth0, prisma, and PostgreSQL
+  - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models using SvelteKit, prisma, and PostgreSQL
 
   == Education
 
