@@ -4,12 +4,12 @@ IBM Plex Sans Variable Font
 This download contains IBM Plex Sans as both variable fonts and static fonts.
 
 IBM Plex Sans is a variable font with these axes:
-  wdth
+  width
   wght
 
 This means all the styles are contained in these files:
-  IBMPlexSans-VariableFont_wdth,wght.ttf
-  IBMPlexSans-Italic-VariableFont_wdth,wght.ttf
+  IBMPlexSans-VariableFont_width,wght.ttf
+  IBMPlexSans-Italic-VariableFont_width,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
