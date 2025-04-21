@@ -1,4 +1,4 @@
-#import "alta-typst.typ": alta, term, skill, styled-link
+#import "alta-typst.typ": alta, term, skill, styled-link, icon
 
 #alta(
   name: "Ryotaro Kimura",
@@ -13,10 +13,14 @@
   == Experience
 
   === Open Source Developer \
-  _Wrtn technologies_\
+  _WRTN Technologies_\
   #term[Mar 2025 --- Present][Remote]
 
   - Developing *Agent OS*: OSS for creating AI agents using TypeScript
+  - Managing community and supporting users
+  - Enhancing the developer experience of the project
+  - Writing whitepapers and documentation
+  - R&D for tool-calling and agent creation
 
   === Freelance Engineer \
   _Self-Employed_\
@@ -38,7 +42,7 @@
   _Eightis Inc._\
   #term[July 2022 --- Aug 2023][Japan | Remote]
 
-  - Launched and developed `Shintai`: a web and iOS based platform for body-alignment training
+  - Launched and developed `SHINTAI`: a web and iOS based platform for body-alignment training
     - Web: SvelteKit, Cloudflare Workers and PostgreSQL
     - iOS app: Swift, SwiftUI and Firebase authentication
     - Machine learning: fine-tuning of pose detection model and run on CoreML
@@ -58,6 +62,63 @@
     - Reached *over 1,000 installations* in companies across Japan
     - Won Microsoft for Startups partnership
   - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models using SvelteKit, prisma, and PostgreSQL
+
+  == #link("https://ryoppippi.com/projects")[Projects]
+
+  === Web Development
+
+  I created some websites and web applications. Here are some of them:
+
+  - #styled-link("https://ryoppippi.com")[ryoppippi.com]: My personal website. It is built using `SvelteKit`, `UnoCSS`, and custom `markdown-it` plugins. I wrote all classes by hand. I created this without any AI/LLM tools.
+  - #styled-link("https://vim-jp-radio.com/")[Vim-JP Radio LP]: A landing page for a podcast presented by `vim-jp` community.
+  - #styled-link("https://pr.ryoppippi.com")[pr.ryoppippi.com]: A personal page to list up my recent OSS contributions.
+
+  === Open Source Projects
+
+  I have started and contributed to many open source projects. Here are some of them:
+
+  ==== AI Tools
+  - #styled-link("https://github.com/ryoppippi/sitemcp")[SiteMCP] (#icon("star")500): Fetch an entire site and use it as an MCP Server. This tool scrapes pages from a website, converts into markdown files, cache them, and serves them as a local MCP server. It is useful when you ask LLMs to ask questions about a libraries/documentation.
+  - #styled-link("https://github.com/ryoppippi/curxy")[curxy] (#icon("star")316): Simple proxy worker for using ollama in cursor. If we want to use local LLM models in cursor, we need to have a proxy between local ollama server and remote cursor server. This tool is a simple proxy worker for that.
+
+  ==== Web Development / TypeScript Ecosystem
+  - #styled-link("https://github.com/ryoppippi/unplugin-typia")[unplugin-typia] (#icon("star")62): A plugin for bundlers to use `Typia`. `Typia` is a TypeScript validation library which generates logic from TypeScript type. Before this plugin, it was hard to use `Typia` in bundlers like `Vite`, `Webpack`, and `esbuild`. This plugin made a huge impact on the `Typia` ecosystem.
+  - #styled-link("https://github.com/ryoppippi/pkg-to-jsr")[pkg-to-jsr] (#icon("star")25): Zero-config tool that generates `jsr.json` from `package.json`. This tool is useful when you publish node projects into `JSR` registry.
+  - #styled-link("https://github.com/ryoppippi/mirror-jsr-to-npm")[mirror-jsr-to-npm] (#icon("star")15): A tool designed to mirror packages from `JSR` to `npm`. It is useful when you want to publish your package to both `npm` and `JSR` registries.
+  - #styled-link("https://github.com/ryoppippi/vim-svelte-inspector")[vim-svelte-inspector] (#icon("star")15): A plugin for Neovim and `Vim` to integrate with `Svelte Inspector` or `Vue Inspector`. When you click a component on the browser, it opens the corresponding component in your `vim`.
+  - #styled-link("https://github.com/ryoppippi/sveltweet")[sveltweet] (#icon("star")6): A Svelte component for embedding tweets. JavaScript is not required, and it supports both SSR and pre-rendering. It enhances the performance of your website.
+
+
+  ==== Zig
+  - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")118): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
+  - #styled-link("https://github.com/ryoppippi/nyancat.zig")[nyancat.zig] (#icon("star")23): Running `nyancat` in your terminal. Written in Zig.
+
+  === Miscellaneous
+  - #styled-link("https://www.youtube.com/watch?v=MngEJwk5KPU")["影のキャンバス- Silhouette on Canvas"] - Interactive art installation with projection mapping. Created with `kinect` and `Processing`. 
+
+  == Publications
+
+// spellchecker:off
+  - #styled-link("https://link.springer.com/chapter/10.1007/978-3-030-22796-8_18")[Artificial Neural Networks for Realized Volatility Prediction in Cryptocurrency Time Series] ISNN 2019: Advances in Neural Networks 2019 (Full papers)
+  - #styled-link("https://dl.acm.org/doi/10.1145/3356590.3356598")[An Intuitive Interface for Digital Synthesizer by Pseudo-intention Learning] Audio Mostly 2019 (Full papers)
+  - #styled-link("https://dl.acm.org/doi/10.1145/3550082.3564187")[prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously] SIGGRAPH Asia 2022 (Poster)
+// spellchecker:on
+
+  == #link("https://ryoppippi.com/talks")[Talks]
+
+  - #styled-link("https://youtu.be/tBY3RxTrhkM")[Neovim for Frontend Developers: Boosting Productivity and Creativity] VimConf 2024
+  - #styled-link("https://youtu.be/D8qI9zkKATM")[Neovim for Web Frontend Developers: Boosting your Dev with some plugins | Neovim Conf 2024] neovimconf.live 2024:
+  - TEDxYouth\@Tokyo 2013
+
+  == Tech Community Activities
+
+  - #styled-link("https://vim-jp.org/")[vim-jp]: Active contributor writing technical articles and participating in community discussions
+  - #styled-link("https://github.com/svelte-jp")[Svelte Japan]: Active member contributing to Svelte Tokyo meetups and community initiatives
+
+  == Natural Languages
+
+  - English (IELTS 6.5) 
+  - Japanese (Native)
 
   == Education
 
@@ -80,33 +141,11 @@
 
   School of Informatics
 
-  == Publications
-
-// spellchecker:off
-  - #styled-link("https://link.springer.com/chapter/10.1007/978-3-030-22796-8_18")[Artificial Neural Networks for Realized Volatility Prediction in Cryptocurrency Time Series] ISNN 2019: Advances in Neural Networks 2019 (Full papers)
-  - #styled-link("https://dl.acm.org/doi/10.1145/3356590.3356598")[An Intuitive Interface for Digital Synthesizer by Pseudo-intention Learning] Audio Mostly 2019 (Full papers)
-  - #styled-link("https://dl.acm.org/doi/10.1145/3550082.3564187")[prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously] SIGGRAPH Asia 2022 (Poster)
-// spellchecker:on
-
-  == Natural Languages
-
-  English (IELTS 6.5) / Japanese (Native)
-
-  == #link("https://ryoppippi.com/talks")[Talks]
-
-  - #link("https://vimconf.org/2024/#menu-time-table")[VimConf 2024]
-  - #link("https://neovimconf.live/speakers/ryo")[neovimconf.live 2024]
-  - TEDxYouth\@Tokyo 2013
-
-  == Tech Community Activities
-
-  #styled-link("https://vim-jp.org/")[vim-jp] / 
-  #styled-link("https://github.com/svelte-jp")[Svelte Japan]
-
   == Other Information
 
   === Visa Status
 
   Already have a work permission without restrictions in UK (*spouse visa*)
+
 ],
   )

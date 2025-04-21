@@ -81,7 +81,7 @@
     title: name + "'s CV",
     author: name,
   )
-  set text(9.4pt, font: "IBM Plex Sans")
+  set text(9.5pt, font: "IBM Plex Sans")
   set page(
     margin: (x: 54pt, y: 52pt),
   )
