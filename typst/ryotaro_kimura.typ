@@ -106,6 +106,7 @@
 
   == #link("https://ryoppippi.com/talks")[Talks]
 
+  - #styled-link("https://audee.jp/voice/show/95400")[vim-jp radio \#23/\#24 (Japanese)]: Talking about academia and open source development
   - #styled-link("https://youtu.be/tBY3RxTrhkM")[Neovim for Frontend Developers: Boosting Productivity and Creativity] VimConf 2024
   - #styled-link("https://youtu.be/D8qI9zkKATM")[Neovim for Web Frontend Developers: Boosting your Dev with some plugins | Neovim Conf 2024] neovimconf.live 2024:
   - TEDxYouth\@Tokyo 2013
