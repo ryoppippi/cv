@@ -8,6 +8,8 @@ extend-ignore-re = [
 ]
 [files]
 extend-exclude = [
+  '*.svg',
+  "*.ttf",
   '*.css',
   '*.js',
   '*.html',
