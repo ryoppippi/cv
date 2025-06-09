@@ -39,7 +39,7 @@
   - Developed AI assistant for customer services using Cloudflare Workers, GCP, OpenAI API and `React`
 
   === Full-Stack Engineer \
-  _Eightis Inc._\
+  _eightis Co., Ltd._\
   #term[July 2022 --- Aug 2023][Japan | Remote]
 
   - Launched and developed `SHINTAI`: a web and iOS based platform for body-alignment training
