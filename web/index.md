@@ -46,7 +46,7 @@ Human Computer Interaction, Intelligent Machines, Web Development
 
 ## Industrial Experience
 
-`Mar 2025 - now` **Open Source Developer, [wrntlabs](https://wrtnlabs.io/)**
+`Mar 2025 - June 2025` **Open Source Developer, [wrntlabs](https://wrtnlabs.io/)**
 
 `Apr 2022 - now` **Research Assistant,
 [University of Tokyo](https://www.u-tokyo.ac.jp/en/)**
