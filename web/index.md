@@ -48,7 +48,7 @@ Human Computer Interaction, Intelligent Machines, Web Development
 
 `Mar 2025 - June 2025` **Open Source Developer, [wrntlabs](https://wrtnlabs.io/)**
 
-`Apr 2022 - now` **Research Assistant,
+`Apr 2022 - May 2024` **Research Assistant,
 [University of Tokyo](https://www.u-tokyo.ac.jp/en/)**
 
 `May 2021 - now` **Instructor, [AI Academy Inc.](https://aiacademy.jp)**
