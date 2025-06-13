@@ -14,7 +14,7 @@
 
   === Open Source Developer \
   _WRTN Technologies_\
-  #term[Mar 2025 --- Present][Remote]
+  #term[Mar 2025 --- June 2025][Remote]
 
   - Developing *Agent OS*: OSS for creating AI agents using TypeScript
   - Managing community and supporting users
