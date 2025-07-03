@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "build": "deno run -ERW --allow-run ./scripts/build.ts"
+    "build": "deno run -ERW --allow-run ./scripts/build.ts",
+    "update-stars": "cd typst && deno run -A update-stars.ts"
   },
   "workspace": [
     "./typst/",
