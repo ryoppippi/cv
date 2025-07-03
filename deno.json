@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "build": "deno run -ERW --allow-run ./scripts/build.ts"
+    "build": "deno run -ERW --allow-run ./scripts/build.ts",
+    "update-stars": "cd typst && deno run --allow-env=GITHUB_TOKEN --allow-net=api.github.com --allow-read=ryotaro_kimura.typ --allow-write=ryotaro_kimura.typ update-stars.ts"
   },
   "workspace": [
     "./typst/",
