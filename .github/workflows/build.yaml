@@ -1,7 +1,0 @@
-name: Build Typst document
-on: push
-
-jobs:
-  build_typst_documents:
-    runs-on: ubuntu-latest
-    steps:
