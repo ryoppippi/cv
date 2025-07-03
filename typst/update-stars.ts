@@ -55,7 +55,7 @@ function formatStarCount(count: number): string {
 }
 
 async function updateTypstFile() {
-  const typstPath = "typst/ryotaro_kimura.typ";
+  const typstPath = "ryotaro_kimura.typ";
   let content = await Deno.readTextFile(typstPath);
   let updated = false;
   
