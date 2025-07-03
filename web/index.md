@@ -46,7 +46,8 @@ Human Computer Interaction, Intelligent Machines, Web Development
 
 ## Industrial Experience
 
-`Mar 2025 - June 2025` **Open Source Developer, [wrntlabs](https://wrtnlabs.io/)**
+`Mar 2025 - June 2025` **Open Source Developer,
+[wrntlabs](https://wrtnlabs.io/)**
 
 `Apr 2022 - May 2024` **Research Assistant,
 [University of Tokyo](https://www.u-tokyo.ac.jp/en/)**
@@ -62,7 +63,8 @@ Human Computer Interaction, Intelligent Machines, Web Development
 
 - Worked on core-algorithms for Reservoir Computing
 - Developed a no-code tool for Reservoir Computing
-- Developed and operated a note-taking app called [sloos](https://sloos.qcore.co.jp/). 
+- Developed and operated a note-taking app called
+  [sloos](https://sloos.qcore.co.jp/).
   - Developed both backend and web frontend
   - Sloos has been installed in over 1000 companies in Japan
 
@@ -82,7 +84,8 @@ Human Computer Interaction, Intelligent Machines, Web Development
 - Frontend: Svelte, SvelteKit, Angular, React, SolidJS
 - Backend: Flask, FastAPI, MySQL, PostgreSQL, Redis, SQLite
 - Machine Learning: Numpy, JAX, Tensorflow2.x, Pytorch, OpenAI API
-- Language: HTML, CSS, JavaScript, TypeScript, Python, Zig, C, C++, Octave, SQL, Lua, Go, Rust
+- Language: HTML, CSS, JavaScript, TypeScript, Python, Zig, C, C++, Octave, SQL,
+  Lua, Go, Rust
 - Hardware: Arduino, Raspberry Pi, Jetson Nano, M5Stack
 - Cloud: Azure, Cloudflare, AWS
 
@@ -96,7 +99,7 @@ Human Computer Interaction, Intelligent Machines, Web Development
 ### Conference Proceedings
 
 `2019` **_Ryotaro Miura_**, Lukáš Pichl, Taisei Kaizoji\
-<!-- spellchecker:disable-line -->
+
 [Artificial Neural Networks for Realized Volatility Prediction in Cryptocurrency Time Series](https://link.springer.com/chapter/10.1007/978-3-030-22796-8_18)\
 **_ISNN 2019: Advances in Neural Networks 2019_**
 

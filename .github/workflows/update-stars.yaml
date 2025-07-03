@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   schedule:
     # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write
@@ -15,7 +15,7 @@ permissions:
 jobs:
   update-stars:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
