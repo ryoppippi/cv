@@ -1,0 +1,48 @@
+name: Update Star Counts
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@2df16476c6412c0b5958802b4de1e07a5873d8f9 # v2
+        with:
+          deno-version: vx.x.x
+
+      - name: Update star counts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          deno task update-stars
+
+      - name: Check if there are any changes
+        id: verify-diff
+        run: |
+          git diff --quiet typst/ryotaro_kimura.typ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.verify-diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add typst/ryotaro_kimura.typ
+          git commit -m "chore: update star counts [skip ci]" -m "Updated star counts for OSS projects"
+          git push
