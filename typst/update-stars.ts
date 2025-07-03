@@ -70,7 +70,7 @@ async function updateTypstFile() {
 
       // Create a regex pattern to match the project's star count
       const pattern = new RegExp(
-        `(${project.name}:.*?\\(#icon\\("star"\\))([0-9.]+k?)\\)`,
+        `(\\[${project.name}\\].*?\\(#icon\\("star"\\))([0-9.]+k?)\\)`,
         "g",
       );
 
