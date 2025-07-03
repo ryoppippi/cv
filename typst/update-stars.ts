@@ -104,8 +104,8 @@ async function updateTypstFile() {
 // Run the update
 if (import.meta.main) {
   try {
-    const hasChanges = await updateTypstFile();
-    Deno.exit(hasChanges ? 0 : 0);
+    await updateTypstFile();
+    Deno.exit(0);
   } catch (error) {
     console.error("Error:", error);
     Deno.exit(1);
