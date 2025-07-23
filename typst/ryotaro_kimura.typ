@@ -78,9 +78,9 @@
   I have started and contributed to many open source projects. Here are some of them:
 
   ==== AI Tools
-  - #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (#icon("star")4.9k): CLI tool for analysing Claude Code token usage and costs from local JSONL files. Features include daily/monthly/session-based reports, live monitoring, real-time dashboard, model-specific tracking, and cost analysis. Built with TypeScript and designed for incredibly fast and informative insights.
+  - #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (#icon("star")5.0k): CLI tool for analysing Claude Code token usage and costs from local JSONL files. Features include daily/monthly/session-based reports, live monitoring, real-time dashboard, model-specific tracking, and cost analysis. Built with TypeScript and designed for incredibly fast and informative insights.
   - #styled-link("https://github.com/ryoppippi/sitemcp")[SiteMCP] (#icon("star")648): Fetch an entire site and use it as an MCP Server. This tool scrapes pages from a website, converts into markdown files, cache them, and serves them as a local MCP server. It is useful when you ask LLMs to ask questions about a libraries/documentation.
-  - #styled-link("https://github.com/ryoppippi/curxy")[curxy] (#icon("star")366): Simple proxy worker for using ollama in cursor. If we want to use local LLM models in cursor, we need to have a proxy between local ollama server and remote cursor server. This tool is a simple proxy worker for that.
+  - #styled-link("https://github.com/ryoppippi/curxy")[curxy] (#icon("star")367): Simple proxy worker for using ollama in cursor. If we want to use local LLM models in cursor, we need to have a proxy between local ollama server and remote cursor server. This tool is a simple proxy worker for that.
 
   ==== Web Development / TypeScript Ecosystem
   - #styled-link("https://github.com/ryoppippi/unplugin-typia")[unplugin-typia] (#icon("star")70): A plugin for bundlers to use `Typia`. `Typia` is a TypeScript validation library which generates logic from TypeScript type. Before this plugin, it was hard to use `Typia` in bundlers like `Vite`, `Webpack`, and `esbuild`. This plugin made a huge impact on the `Typia` ecosystem.
