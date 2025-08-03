@@ -21,13 +21,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: denoland/setup-deno@e95548e56dfa95d4e1a28d6f422fafe75c4c26fb # v2.0.3
+      - uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2.0.1
         with:
-          deno-version: v2.x
+          bun-version: latest
 
       - name: Update star counts
         run: |
-          deno task update-stars
+          bun run update-stars
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
