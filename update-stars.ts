@@ -1,4 +1,4 @@
-#!/usr/bin/env deno run -A
+#!/usr/bin/env bun
 
 interface Project {
   owner: string;
@@ -29,7 +29,7 @@ const projects: Project[] = [
 ];
 
 async function fetchStarCount(owner: string, repo: string): Promise<number> {
-  const token = Deno.env.get("GITHUB_TOKEN");
+  const token = Bun.env.GITHUB_TOKEN;
   const headers: HeadersInit = {
     "Accept": "application/vnd.github.v3+json",
   };
@@ -60,7 +60,7 @@ function formatStarCount(count: number): string {
 
 async function updateTypstFile() {
   const typstPath = "ryotaro_kimura.typ";
-  let content = await Deno.readTextFile(typstPath);
+  let content = await Bun.file(typstPath).text();
   let updated = false;
 
   for (const project of projects) {
@@ -86,13 +86,13 @@ async function updateTypstFile() {
 
       // Small delay to avoid rate limiting
       await new Promise((resolve) => setTimeout(resolve, 100));
-    } catch (error) {
+    } catch (error: any) {
       console.error(`❌ Failed to update ${project.name}:`, error.message);
     }
   }
 
   if (updated) {
-    await Deno.writeTextFile(typstPath, content);
+    await Bun.write(typstPath, content);
     console.log("\n✨ Star counts updated successfully!");
     return true;
   } else {
@@ -102,12 +102,10 @@ async function updateTypstFile() {
 }
 
 // Run the update
-if (import.meta.main) {
-  try {
-    await updateTypstFile();
-    Deno.exit(0);
-  } catch (error) {
-    console.error("Error:", error);
-    Deno.exit(1);
-  }
+try {
+  await updateTypstFile();
+  process.exit(0);
+} catch (error) {
+  console.error("Error:", error);
+  process.exit(1);
 }

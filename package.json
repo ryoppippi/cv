@@ -1,0 +1,15 @@
+{
+  "name": "ryoppippi-cv",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "bun run ./scripts/build.ts",
+    "update-stars": "bun run update-stars.ts",
+    "dev": "bun run typst watch ./ryotaro_kimura.typ",
+    "compile": "bun run typst compile ./ryotaro_kimura.typ --font-path ./ibm-sans"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typst": "^0.10.0-8"
+  }
+}

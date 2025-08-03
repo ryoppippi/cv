@@ -1,36 +1,28 @@
-import { $ } from "jsr:@david/dax";
+import { $ } from "bun";
+import path from "path";
 
-const gitRoot = $.path(await $`git rev-parse --show-toplevel`.text());
-const webDir = gitRoot.join("web");
-const typstDir = gitRoot.join("typst");
-const distDir = gitRoot.join("dist");
+const gitRoot = await $`git rev-parse --show-toplevel`.text();
+const gitRootPath = gitRoot.trim();
+const distDir = path.join(gitRootPath, "dist");
 
-await Promise.all([
-  $`deno task build`.cwd(webDir),
-  $`deno task compile`.cwd(typstDir),
-]);
+$.cwd(gitRootPath);
 
-$.cd(gitRoot);
-await $`rm -rf dist`;
-await $`mkdir -p dist`;
-await $`cp -r ./web/dist/ .`;
+// Compile typst
+await $`bun run compile`;
 
-const typstPdf = await $`ls ./typst`
-  .lines()
-  .then((lines) => lines.filter((line) => line.endsWith(".pdf")));
+// Setup dist directory
+await $`rm -rf ${distDir}`;
+await $`mkdir -p ${distDir}`;
 
-await Promise.all(
-  typstPdf.map(async (pdf) => {
-    await $`cp ./typst/${pdf} ${distDir}/`;
-  }),
-);
+// Copy PDF files
+const typstPdfFiles = await $`ls *.pdf`.text();
+const pdfFiles = typstPdfFiles.trim().split('\n').filter(Boolean);
 
-// LLM
-const readWebMarkdown = $`cat ${webDir.join("index.md")}`.text();
-const readTypstMarkdown = $`cat ${typstDir.join("ryotaro_kimura.typ")}`.text();
+for (const pdf of pdfFiles) {
+  await $`cp ${pdf} ${distDir}/`;
+}
 
-const docs = await Promise.all([readWebMarkdown, readTypstMarkdown]);
+// Copy _redirects file
+await $`cp _redirects ${distDir}/`;
 
-const concatDocs = docs.join("\n");
-
-await $`echo ${concatDocs} > ${distDir.join("llms-full.txt")}`;
+console.log("Build completed successfully!");
