@@ -17,7 +17,7 @@
   #term[June 2025 --- Present][Remote]
 
   - Making unified API platforms AI-friendly for seamless integration with AI systems
-  - Designing and implementing AI-optimized unified API interfaces for HR technology
+  - Designing and implementing AI-optimised unified API interfaces for HR technology
   - Enhancing unified API accessibility and usability for AI applications and LLMs
   - Building intelligent middleware to bridge traditional unified APIs with modern AI frameworks
 
