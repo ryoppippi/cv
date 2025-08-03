@@ -12,6 +12,15 @@
   [
   == Experience
 
+  === AI Engineer \
+  _StackOne_\
+  #term[June 2025 --- Present][Remote]
+
+  - Making unified API platforms AI-friendly for seamless integration with AI systems
+  - Designing and implementing AI-optimised unified API interfaces for HR technology
+  - Enhancing unified API accessibility and usability for AI applications and LLMs
+  - Building intelligent middleware to bridge traditional unified APIs with modern AI frameworks
+
   === Open Source Developer \
   _WRTN Technologies_\
   #term[Mar 2025 --- June 2025][Remote]
