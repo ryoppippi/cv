@@ -34,13 +34,13 @@ jobs:
       - name: Check if there are any changes
         id: verify-diff
         run: |
-          git diff --quiet typst/ryotaro_kimura.typ || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet ryotaro_kimura.typ || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.verify-diff.outputs.changed == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add typst/ryotaro_kimura.typ
+          git add ryotaro_kimura.typ
           git commit -m "chore: update star counts" -m "Updated star counts for OSS projects"
           git push
