@@ -12,6 +12,14 @@
   [
   == Experience
 
+  === Software Engineer \
+  _StackOne_\
+  #term[Nov 2025 --- Present][Remote]
+
+  - Working on unified API platform for HR technology integrations
+  - Building and maintaining integrations with various HR systems
+  - Contributing to the engineering team's technical initiatives
+
   === Open Source Developer \
   _WRTN Technologies_\
   #term[Mar 2025 --- June 2025][Remote]
