@@ -1,4 +1,11 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "schedule:weekly",
+    "group:allNonMajor"
+  ],
+  "postUpdateOptions": [],
   "vulnerabilityAlerts": {
     "labels": [
       "security"
@@ -7,10 +14,6 @@
   "labels": [
     "dependencies",
     "renovate"
-  ],
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>Omochice/renovate-config:deno"
   ],
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
