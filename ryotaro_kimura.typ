@@ -100,7 +100,7 @@
 
 
   ==== Zig
-  - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")139): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
+  - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")140): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
   - #styled-link("https://github.com/ryoppippi/nyancat.zig")[nyancat.zig] (#icon("star")23): Running `nyancat` in your terminal. Written in Zig.
 
   === Miscellaneous
