@@ -1,5 +1,7 @@
 #!/usr/bin/env bun
 
+import pLimit from "p-limit";
+
 interface Project {
   owner: string;
   repo: string;
@@ -63,31 +65,44 @@ if(import.meta.main) {
   let content = await Bun.file(typstPath).text();
   let updated = false;
 
-  for (const project of projects) {
-    try {
-      const starCount = await fetchStarCount(project.owner, project.repo);
-      const formattedCount = formatStarCount(starCount);
+  // Limit concurrency to 5 to avoid rate limiting
+  const limit = pLimit(5);
 
-      // Create a regex pattern to match the project's star count
-      const pattern = new RegExp(
-        `(\\[${project.name}\\].*?\\(#icon\\("star"\\))([0-9.]+k?)\\)`,
-        "g",
-      );
+  const results = await Promise.all(
+    projects.map((project) =>
+      limit(async () => {
+        try {
+          const starCount = await fetchStarCount(project.owner, project.repo);
+          const formattedCount = formatStarCount(starCount);
+          return { project, formattedCount, success: true };
+        } catch (error: any) {
+          console.error(`❌ Failed to update ${project.name}:`, error.message);
+          return { project, formattedCount: "", success: false };
+        }
+      })
+    )
+  );
 
-      const newContent = content.replace(pattern, `$1${formattedCount})`);
+  // Apply all updates to the content
+  for (const result of results) {
+    if (!result.success) continue;
 
-      if (newContent !== content) {
-        console.log(`✅ Updated ${project.name}: ${formattedCount} stars`);
-        content = newContent;
-        updated = true;
-      } else {
-        console.log(`ℹ️  ${project.name}: ${formattedCount} stars (no change)`);
-      }
+    const { project, formattedCount } = result;
 
-      // Small delay to avoid rate limiting
-      await new Promise((resolve) => setTimeout(resolve, 100));
-    } catch (error: any) {
-      console.error(`❌ Failed to update ${project.name}:`, error.message);
+    // Create a regex pattern to match the project's star count
+    const pattern = new RegExp(
+      `(\\[${project.name}\\].*?\\(#icon\\("star"\\))([0-9.]+k?)\\)`,
+      "g",
+    );
+
+    const newContent = content.replace(pattern, `$1${formattedCount})`);
+
+    if (newContent !== content) {
+      console.log(`✅ Updated ${project.name}: ${formattedCount} stars`);
+      content = newContent;
+      updated = true;
+    } else {
+      console.log(`ℹ️  ${project.name}: ${formattedCount} stars (no change)`);
     }
   }
 
