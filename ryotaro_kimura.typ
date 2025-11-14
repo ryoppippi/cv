@@ -74,14 +74,6 @@
 
   == #link("https://ryoppippi.com/projects")[Projects]
 
-  === Web Development
-
-  I created some websites and web applications. Here are some of them:
-
-  - #styled-link("https://ryoppippi.com")[ryoppippi.com]: My personal website. It is built using `SvelteKit`, `UnoCSS`, and custom `markdown-it` plugins. I wrote all classes by hand. I created this without any AI/LLM tools.
-  - #styled-link("https://vim-jp-radio.com/")[Vim-JP Radio LP]: A landing page for a podcast presented by `vim-jp` community.
-  - #styled-link("https://pr.ryoppippi.com")[pr.ryoppippi.com]: A personal page to list up my recent OSS contributions.
-
   === Open Source Projects
 
   I have started and contributed to many open source projects. Here are some of them:
@@ -103,6 +95,14 @@
   - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")140): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
   - #styled-link("https://github.com/ryoppippi/nyancat.zig")[nyancat.zig] (#icon("star")23): Running `nyancat` in your terminal. Written in Zig.
 
+  === Web Development
+
+  I created some websites and web applications. Here are some of them:
+
+  - #styled-link("https://ryoppippi.com")[ryoppippi.com]: My personal website. It is built using `SvelteKit`, `UnoCSS`, and custom `markdown-it` plugins. I wrote all classes by hand. I created this without any AI/LLM tools.
+  - #styled-link("https://vim-jp-radio.com/")[Vim-JP Radio LP]: A landing page for a podcast presented by `vim-jp` community.
+  - #styled-link("https://pr.ryoppippi.com")[pr.ryoppippi.com]: A personal page to list up my recent OSS contributions.
+
   === Miscellaneous
   - #styled-link("https://www.youtube.com/watch?v=MngEJwk5KPU")["影のキャンバス- Silhouette on Canvas"] - Interactive art installation with projection mapping. Created with `kinect` and `Processing`. 
 
@@ -113,6 +113,12 @@
   - #styled-link("https://dl.acm.org/doi/10.1145/3356590.3356598")[An Intuitive Interface for Digital Synthesizer by Pseudo-intention Learning] Audio Mostly 2019 (Full papers)
   - #styled-link("https://dl.acm.org/doi/10.1145/3550082.3564187")[prometheus: A mobile telepresence system connecting the 1st person and 3rd person perspectives continuously] SIGGRAPH Asia 2022 (Poster)
 // spellchecker:on
+
+  == Awards & Recognition
+
+  === #styled-link("https://oss.toyokumo.co.jp/")[TOYOKUMO Thanks OSS Award 2025]
+
+  - Received *\$3,180* for #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (AI & Newcomer categories)
 
   == #link("https://ryoppippi.com/talks")[Talks]
 
@@ -151,12 +157,6 @@
   #term[Sep 2017 --- May 2018][Edinburgh, UK]
 
   School of Informatics
-
-  == Awards & Recognition
-
-  === #styled-link("https://oss.toyokumo.co.jp/")[TOYOKUMO Thanks OSS Award 2025]
-
-  - Received *\$3,180* for #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (AI & Newcomer categories)
 
   == Other Information
 
