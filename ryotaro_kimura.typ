@@ -61,16 +61,11 @@
   _QuantumCore Inc._\
   #term[Oct 2018 --- June 2023][Tokyo, Japan | Remote]
 
-  - Worked on #link("https://www.qcore.co.jp/")[`Qore`]: the core-algorithms to enhance Reservoir Computing(RC)
-  - 2018 - 2019: Implement RC and data preprocessing algorithms originally written in Python to embedded devices using *C/C++*
-    - Achieved *120x faster training time* compared to LSTM and enabled deployment on embedded devices, including Raspberry Pi and M5Stack.
-  - 2018 - 2023: Created and presented a dozens of PoCs using RC, mainly in the field of _time-series_, _audio processing_, and _image processing_
-  - 2020 - 2023: Launched, developed and operated `Sloos`: a minute-taking app for remote workers
-    - Applied speaker-detection algorithm with RC to automatically generate meeting minutes
-    - Built both backend and web frontend using Flask, Angular, MySQL Azure App Directory, and PAY.JP
-    - Reached *over 1,000 installations* in companies across Japan
-    - Won Microsoft for Startups partnership
-  - 2021 - `Qore Cloud`: a web-based no-code tool for fine-tuning RC models using SvelteKit, prisma, and PostgreSQL
+  - Led research and development of #link("https://www.qcore.co.jp/")[`Qore`]: core-algorithms to enhance Reservoir Computing (RC)
+  - Implemented RC and data preprocessing algorithms in C/C++ for embedded devices (Raspberry Pi, M5Stack), achieving *120x faster training time* compared to LSTM
+  - Created and presented dozens of PoCs using RC in time-series analysis, audio processing, and image processing
+  - Launched and operated `Sloos`: minute-taking app with RC-based speaker detection, reaching *over 1,000 installations* in companies across Japan and winning Microsoft for Startups partnership
+  - Developed `Qore Cloud`: web-based no-code tool for fine-tuning RC models using SvelteKit, Prisma, and PostgreSQL
 
   == #link("https://ryoppippi.com/projects")[Projects]
 
