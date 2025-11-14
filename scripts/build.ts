@@ -8,6 +8,7 @@ const distDir = path.join(gitRootPath, "dist");
 $.cwd(gitRootPath);
 
 // Compile typst
+await $`bun run update-stars`;
 await $`bun run compile`;
 
 // Setup dist directory
