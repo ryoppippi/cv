@@ -58,7 +58,7 @@ function formatStarCount(count: number): string {
   return count.toString();
 }
 
-async function updateTypstFile() {
+if(import.meta.main) {
   const typstPath = "ryotaro_kimura.typ";
   let content = await Bun.file(typstPath).text();
   let updated = false;
@@ -91,21 +91,11 @@ async function updateTypstFile() {
     }
   }
 
-  if (updated) {
-    await Bun.write(typstPath, content);
-    console.log("\n✨ Star counts updated successfully!");
-    return true;
-  } else {
+  if (!updated) {
     console.log("\n👍 All star counts are up to date!");
-    return false;
+    process.exit(0);
   }
+  await Bun.write(typstPath, content);
+  console.log("\n✨ Star counts updated successfully!");
 }
 
-// Run the update
-try {
-  await updateTypstFile();
-  process.exit(0);
-} catch (error) {
-  console.error("Error:", error);
-  process.exit(1);
-}
