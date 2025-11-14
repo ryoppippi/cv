@@ -76,8 +76,6 @@
 
   === Open Source Projects
 
-  I have started and contributed to many open source projects. Here are some of them:
-
   ==== AI Tools
   - #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (#icon("star")8.9k): CLI tool for analysing Claude Code token usage and costs from local JSONL files. Features include daily/monthly/session-based reports, live monitoring, real-time dashboard, model-specific tracking, and cost analysis. Built with TypeScript and designed for incredibly fast and informative insights.
   - #styled-link("https://github.com/ryoppippi/sitemcp")[SiteMCP] (#icon("star")732): Fetch an entire site and use it as an MCP Server. This tool scrapes pages from a website, converts into markdown files, cache them, and serves them as a local MCP server. It is useful when you ask LLMs to ask questions about a libraries/documentation.
@@ -97,8 +95,6 @@
 
   === Web Development
 
-  I created some websites and web applications. Here are some of them:
-
   - #styled-link("https://ryoppippi.com")[ryoppippi.com]: My personal website. It is built using `SvelteKit`, `UnoCSS`, and custom `markdown-it` plugins. I wrote all classes by hand. I created this without any AI/LLM tools.
   - #styled-link("https://vim-jp-radio.com/")[Vim-JP Radio LP]: A landing page for a podcast presented by `vim-jp` community.
   - #styled-link("https://pr.ryoppippi.com")[pr.ryoppippi.com]: A personal page to list up my recent OSS contributions.
@@ -116,9 +112,7 @@
 
   == Awards & Recognition
 
-  === #styled-link("https://oss.toyokumo.co.jp/")[TOYOKUMO Thanks OSS Award 2025]
-
-  - Received *\$3,180* for #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (AI & Newcomer categories)
+  - #styled-link("https://oss.toyokumo.co.jp/")[*TOYOKUMO Thanks OSS Award 2025*]: Received *\$3,180* for #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (AI & Newcomer categories)
 
   == #link("https://ryoppippi.com/talks")[Talks]
 
