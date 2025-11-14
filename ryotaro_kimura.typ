@@ -116,10 +116,10 @@
 
   == #link("https://ryoppippi.com/talks")[Talks]
 
-  - #styled-link("https://audee.jp/voice/show/95400")[vim-jp radio \#23/\#24 (Japanese)]: Talking about academia and open source development
+  - #styled-link("https://www.youtube.com/watch?v=9MQpu0nxl5E&t=26927s")[AI-Optimised Vim Keybindings: HCI-Driven HITL Interfaces] VimConf 2025
+  - #styled-link("https://www.youtube.com/watch?time_continue=2297&v=u8I_LujFXeU")[Evolution of Claude Code, ccusage, and the Future] Claude Code Meetup Tokyo 2025
   - #styled-link("https://youtu.be/tBY3RxTrhkM")[Neovim for Frontend Developers: Boosting Productivity and Creativity] VimConf 2024
-  - #styled-link("https://youtu.be/D8qI9zkKATM")[Neovim for Web Frontend Developers: Boosting your Dev with some plugins | Neovim Conf 2024] neovimconf.live 2024:
-  - TEDxYouth\@Tokyo 2013
+  - #styled-link("https://youtu.be/D8qI9zkKATM")[Neovim for Web Frontend Developers: Boosting your Dev with some plugins] neovimconf.live 2024
 
   == Tech Community Activities
 
@@ -151,6 +151,12 @@
   #term[Sep 2017 --- May 2018][Edinburgh, UK]
 
   School of Informatics
+
+  == Awards & Recognition
+
+  === #styled-link("https://oss.toyokumo.co.jp/")[TOYOKUMO Thanks OSS Award 2025]
+
+  - Received *\$3,180* for #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (AI & Newcomer categories)
 
   == Other Information
 
