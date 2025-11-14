@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "bun run ./scripts/build.ts",
-    "update-stars": "bun run update-stars.ts",
+    "update-stars": "bun run ./scripts/update-stars.ts",
     "dev": "bun run typst watch ./ryotaro_kimura.typ",
     "compile": "bun run typst compile ./ryotaro_kimura.typ --font-path ./ibm-sans"
   },
