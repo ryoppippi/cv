@@ -78,7 +78,7 @@
 
   ==== Web Development / TypeScript Ecosystem
   - #styled-link("https://github.com/ryoppippi/unplugin-typia")[unplugin-typia] (#icon("star")80): A plugin for bundlers to use `Typia`. `Typia` is a TypeScript validation library which generates logic from TypeScript type. Before this plugin, it was hard to use `Typia` in bundlers like `Vite`, `Webpack`, and `esbuild`. This plugin made a huge impact on the `Typia` ecosystem.
-  - #styled-link("https://github.com/ryoppippi/pkg-to-jsr")[pkg-to-jsr] (#icon("star")27): Zero-config tool that generates `jsr.json` from `package.json`. This tool is useful when you publish node projects into `JSR` registry.
+  - #styled-link("https://github.com/ryoppippi/pkg-to-jsr")[pkg-to-jsr] (#icon("star")28): Zero-config tool that generates `jsr.json` from `package.json`. This tool is useful when you publish node projects into `JSR` registry.
   - #styled-link("https://github.com/ryoppippi/mirror-jsr-to-npm")[mirror-jsr-to-npm] (#icon("star")17): A tool designed to mirror packages from `JSR` to `npm`. It is useful when you want to publish your package to both `npm` and `JSR` registries.
   - #styled-link("https://github.com/ryoppippi/vim-svelte-inspector")[vim-svelte-inspector] (#icon("star")19): A plugin for Neovim and `Vim` to integrate with `Svelte Inspector` or `Vue Inspector`. When you click a component on the browser, it opens the corresponding component in your `vim`.
   - #styled-link("https://github.com/ryoppippi/sveltweet")[sveltweet] (#icon("star")8): A Svelte component for embedding tweets. JavaScript is not required, and it supports both SSR and pre-rendering. It enhances the performance of your website.
