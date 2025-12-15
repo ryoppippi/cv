@@ -9,7 +9,7 @@
     "compile": "bun run typst compile ./ryotaro_kimura.typ --font-path ./ibm-sans"
   },
   "devDependencies": {
-    "@types/bun": "^1.3.3",
+    "@types/bun": "^1.3.4",
     "typst": "^0.10.0-8"
   },
   "dependencies": {
