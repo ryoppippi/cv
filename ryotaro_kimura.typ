@@ -73,7 +73,7 @@
 
   ==== AI Tools
   - #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (#icon("star")9.6k): CLI tool for analysing Claude Code token usage and costs from local JSONL files. Features include daily/monthly/session-based reports, live monitoring, real-time dashboard, model-specific tracking, and cost analysis. Built with TypeScript and designed for incredibly fast and informative insights.
-  - #styled-link("https://github.com/ryoppippi/sitemcp")[SiteMCP] (#icon("star")743): Fetch an entire site and use it as an MCP Server. This tool scrapes pages from a website, converts into markdown files, cache them, and serves them as a local MCP server. It is useful when you ask LLMs to ask questions about a libraries/documentation.
+  - #styled-link("https://github.com/ryoppippi/sitemcp")[SiteMCP] (#icon("star")742): Fetch an entire site and use it as an MCP Server. This tool scrapes pages from a website, converts into markdown files, cache them, and serves them as a local MCP server. It is useful when you ask LLMs to ask questions about a libraries/documentation.
   - #styled-link("https://github.com/ryoppippi/curxy")[curxy] (#icon("star")406): Simple proxy worker for using ollama in cursor. If we want to use local LLM models in cursor, we need to have a proxy between local ollama server and remote cursor server. This tool is a simple proxy worker for that.
 
   ==== Web Development / TypeScript Ecosystem
