@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "bun run ./scripts/build.ts",
-    "update-stars": "bun run ./scripts/update-stars.ts",
+    "build": "bun -b run ./scripts/build.ts",
+    "update-stars": "bun -b run ./scripts/update-stars.ts",
     "dev": "bun run typst watch ./ryotaro_kimura.typ",
     "compile": "bun run typst compile ./ryotaro_kimura.typ --font-path ./ibm-sans"
   },

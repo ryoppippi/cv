@@ -21,13 +21,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3 # v2.1.2
+      - name: Setup Nix
+        uses: ./.github/actions/setup-nix
         with:
-          bun-version: latest
+          tools: 'bun'
+          skip-bun-install: 'true'
 
       - name: Update star counts
-        run: |
-          bun run update-stars
+        run: bun run update-stars
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
