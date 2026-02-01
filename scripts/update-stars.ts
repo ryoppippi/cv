@@ -1,6 +1,7 @@
-#!/usr/bin/env bun
-
-import pLimit from "p-limit";
+#!/usr/bin/env nix
+/*
+#! nix shell --inputs-from . nixpkgs#bun -c bun
+*/
 
 interface Project {
   owner: string;
@@ -60,36 +61,42 @@ function formatStarCount(count: number): string {
   return count.toString();
 }
 
-if(import.meta.main) {
+async function processInBatches<T, R>(
+  items: T[],
+  batchSize: number,
+  processor: (item: T) => Promise<R>,
+): Promise<R[]> {
+  const results: R[] = [];
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    const batchResults = await Promise.all(batch.map(processor));
+    results.push(...batchResults);
+  }
+  return results;
+}
+
+if (import.meta.main) {
   const typstPath = "ryotaro_kimura.typ";
   let content = await Bun.file(typstPath).text();
   let updated = false;
 
-  // Limit concurrency to 5 to avoid rate limiting
-  const limit = pLimit(5);
+  const results = await processInBatches(projects, 5, async (project) => {
+    try {
+      const starCount = await fetchStarCount(project.owner, project.repo);
+      const formattedCount = formatStarCount(starCount);
+      return { project, formattedCount, success: true };
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`❌ Failed to update ${project.name}:`, message);
+      return { project, formattedCount: "", success: false };
+    }
+  });
 
-  const results = await Promise.all(
-    projects.map((project) =>
-      limit(async () => {
-        try {
-          const starCount = await fetchStarCount(project.owner, project.repo);
-          const formattedCount = formatStarCount(starCount);
-          return { project, formattedCount, success: true };
-        } catch (error: any) {
-          console.error(`❌ Failed to update ${project.name}:`, error.message);
-          return { project, formattedCount: "", success: false };
-        }
-      })
-    )
-  );
-
-  // Apply all updates to the content
   for (const result of results) {
     if (!result.success) continue;
 
     const { project, formattedCount } = result;
 
-    // Create a regex pattern to match the project's star count
     const pattern = new RegExp(
       `(\\[${project.name}\\].*?\\(#icon\\("star"\\))([0-9.]+k?)\\)`,
       "g",
@@ -113,4 +120,3 @@ if(import.meta.main) {
   await Bun.write(typstPath, content);
   console.log("\n✨ Star counts updated successfully!");
 }
-

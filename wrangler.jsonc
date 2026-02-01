@@ -1,9 +1,9 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
+	"$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/refs/heads/main/packages/wrangler/config-schema.json",
 	"name": "cv",
 	"compatibility_date": "2025-01-29",
 	"assets": {
-		"directory": "dist",
+		"directory": "result",
 		"not_found_handling": "none"
 	}
 }
