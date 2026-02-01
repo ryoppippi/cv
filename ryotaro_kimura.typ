@@ -61,11 +61,9 @@
   _QuantumCore Inc._\
   #term[Oct 2018 --- June 2023][Tokyo, Japan | Remote]
 
-  - Led research and development of #link("https://www.qcore.co.jp/")[`Qore`]: core-algorithms to enhance Reservoir Computing (RC)
-  - Implemented RC and data preprocessing algorithms in C/C++ for embedded devices (Raspberry Pi, M5Stack), achieving *120x faster training time* compared to LSTM
-  - Created and presented dozens of PoCs using RC in time-series analysis, audio processing, and image processing
-  - Launched and operated `Sloos`: minute-taking app with RC-based speaker detection, reaching *over 1,000 installations* in companies across Japan and winning Microsoft for Startups partnership
-  - Developed `Qore Cloud`: web-based no-code tool for fine-tuning RC models using SvelteKit, Prisma, and PostgreSQL
+  - Led R&D of #link("https://www.qcore.co.jp/")[`Qore`]: Reservoir Computing algorithms in C/C++ for embedded devices, achieving *120x faster training* than LSTM
+  - Launched `Sloos`: minute-taking app with RC-based speaker detection, reaching *1,000+ installations* and winning Microsoft for Startups partnership
+  - Built `Qore Cloud`: no-code tool for fine-tuning RC models using SvelteKit, Prisma, and PostgreSQL
 
   == #link("https://ryoppippi.com/projects")[Projects]
 
