@@ -128,6 +128,12 @@
 
   == Education
 
+  === Doctor of Philosophy - PhD (Dropout) \
+  _University of Tokyo_\
+  #term[Apr 2022 --- Mar 2026][Tokyo, Japan]
+
+  Rekimoto Lab
+
   === Master of Applied Computer Science \
   _University of Tokyo_\
   #term[Apr 2019 --- Mar 2022][Tokyo, Japan]
