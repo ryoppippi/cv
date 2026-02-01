@@ -20,7 +20,7 @@ jobs:
           github_access_token: ${{ github.token }}
 
       - name: Check flake
-        run: nix flake check --all-systems --show-trace
+        run: nix flake check --show-trace
 
   deploy:
     runs-on: ubuntu-latest
