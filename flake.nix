@@ -235,6 +235,7 @@
               bun
               typos-lsp
               gitleaks
+              nixd
             ];
             shellHook = ''
               export TYPST_FONT_PATHS="${ibmPlexFonts}/share/fonts/opentype"
