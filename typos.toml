@@ -9,6 +9,7 @@ extend-ignore-re = [
 [default.extend-words]
 typ = 'typ'
 Realized = 'Realized'
+substituters = 'substituters'
 
 [files]
 extend-exclude = [

@@ -20,7 +20,7 @@ jobs:
           github_access_token: ${{ github.token }}
 
       - name: Check flake
-        run: nix flake check --show-trace
+        run: nix flake check --accept-flake-config --show-trace
 
   deploy:
     runs-on: ubuntu-latest
@@ -44,10 +44,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
-        run: nix build
+        run: nix build --accept-flake-config
 
       - name: Deploy to Cloudflare Workers
-        run: nix run .#deploy
+        run: nix run --accept-flake-config .#deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -74,12 +74,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
-        run: nix build
+        run: nix build --accept-flake-config
 
       - name: Deploy preview to Cloudflare Workers
         id: deploy
         run: |
-          output=$(nix run .#preview 2>&1)
+          output=$(nix run --accept-flake-config .#preview 2>&1)
           echo "$output"
           echo "output<<EOF" >> $GITHUB_OUTPUT
           echo "$output" >> $GITHUB_OUTPUT
