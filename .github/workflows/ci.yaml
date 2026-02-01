@@ -3,6 +3,10 @@ on:
   push:
   pull_request:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   spell-check:
     runs-on: ubuntu-slim
@@ -25,10 +29,25 @@ jobs:
         shell: bash
         run: npx @secretlint/quick-start ./**/*
 
+  flake-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Setup Nix
+        uses: ./.github/actions/setup-nix
+        with:
+          skip-bun-install: 'true'
+
+      - name: Check flake
+        run: nix flake check --all-systems --show-trace
+
   action-timeline:
     needs:
       - spell-check
       - secretlint
+      - flake-check
     if: ${{ always() }}
     runs-on: ubuntu-slim
     steps:
