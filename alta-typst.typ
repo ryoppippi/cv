@@ -5,7 +5,7 @@
   box(
     baseline: shift,
     height: 10pt,
-    image("icons/" + name + ".svg")
+    image("icons/" + name + ".svg"),
   )
   h(3pt)
 }
@@ -14,17 +14,19 @@
   set text(8pt)
   let icon = icon.with(shift: 2.5pt)
 
-  services.map(service => {
+  services
+    .map(service => {
       icon(service.name)
 
       if "display" in service.keys() {
-        link(service.link)[#{service.display}]
+        link(service.link)[#{ service.display }]
       } else {
         link(service.link)
       }
-    }).join(h(10pt))
+    })
+    .join(h(10pt))
   [
-    
+
   ]
 }
 
@@ -41,19 +43,19 @@
 
   h(1fr)
 
-  while (not done){
+  while (not done) {
     let colour = rgb("#c0c0c0") // grey
 
-    if (i <= rating){
+    if (i <= rating) {
       colour = primary_colour
     }
 
     box(circle(
       radius: 4pt,
-      fill: colour
+      fill: colour,
     ))
 
-    if (max_rating == i){
+    if (max_rating == i) {
       done = true
     } else {
       // no spacing on last
@@ -67,9 +69,9 @@
 }
 
 #let styled-link(dest, content) = emph(text(
-    fill: link_colour,
-    link(dest, content)
-  ))
+  fill: link_colour,
+  link(dest, content),
+))
 
 #let alta(
   name: "",
@@ -87,25 +89,25 @@
   )
 
   show heading.where(
-    level: 2
+    level: 2,
   ): it => text(
-      fill: primary_colour,
+    fill: primary_colour,
     [
-      #{it.body}
+      #{ it.body }
       #v(-7pt)
       #line(length: 100%, stroke: 1pt + primary_colour)
-    ]
+    ],
   )
 
   show heading.where(
-    level: 3
+    level: 3,
   ): it => text(it.body)
-  
+
   show heading.where(
-    level: 4
+    level: 4,
   ): it => text(
     fill: primary_colour,
-    it.body
+    it.body,
   )
 
   [= #name]

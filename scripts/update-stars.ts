@@ -34,17 +34,14 @@ const projects: Project[] = [
 async function fetchStarCount(owner: string, repo: string): Promise<number> {
   const token = Bun.env.GITHUB_TOKEN;
   const headers: HeadersInit = {
-    "Accept": "application/vnd.github.v3+json",
+    Accept: "application/vnd.github.v3+json",
   };
 
   if (token) {
     headers["Authorization"] = `token ${token}`;
   }
 
-  const response = await fetch(
-    `https://api.github.com/repos/${owner}/${repo}`,
-    { headers },
-  );
+  const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers });
 
   if (!response.ok) {
     throw new Error(`Failed to fetch ${owner}/${repo}: ${response.statusText}`);
@@ -97,10 +94,7 @@ if (import.meta.main) {
 
     const { project, formattedCount } = result;
 
-    const pattern = new RegExp(
-      `(\\[${project.name}\\].*?\\(#icon\\("star"\\))([0-9.]+k?)\\)`,
-      "g",
-    );
+    const pattern = new RegExp(`(\\[${project.name}\\].*?\\(#icon\\("star"\\))([0-9.]+k?)\\)`, "g");
 
     const newContent = content.replace(pattern, `$1${formattedCount})`);
 

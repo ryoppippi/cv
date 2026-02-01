@@ -4,7 +4,7 @@ extend-ignore-re = [
   "(?s)(#|//)\\s*spellchecker:off.*?\\n\\s*(#|//)\\s*spellchecker:on",
   "(?s)<!--\\s*spellchecker:off.*?\\n\\s*spellchecker:on\\s*-->",
   "(?Rm)^.*#\\s*spellchecker:disable-line$",
-  "(?m)^.*<!--\\s*spellchecker:disable-line\\s*-->\\n.*$"
+  "(?m)^.*<!--\\s*spellchecker:disable-line\\s*-->\\n.*$",
 ]
 [default.extend-words]
 typ = 'typ'
@@ -12,11 +12,4 @@ Realized = 'Realized'
 substituters = 'substituters'
 
 [files]
-extend-exclude = [
-  '*.svg',
-  "*.ttf",
-  '*.css',
-  '*.js',
-  '*.html',
-  '*.ts'
-]
+extend-exclude = ['*.svg', "*.ttf", '*.css', '*.js', '*.html', '*.ts']
