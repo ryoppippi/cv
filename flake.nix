@@ -38,7 +38,15 @@
       ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
 
-      inherit (cloudflare-redirects.lib) generateRedirects;
+      inherit (cloudflare-redirects.lib) generateRedirectsFromList;
+
+      redirects = [
+        {
+          from = "/*";
+          to = "/ryotaro_kimura.pdf";
+          status = 200;
+        }
+      ];
 
       treefmtEval =
         system:
@@ -111,7 +119,7 @@
               runHook preInstall
               mkdir -p $out
               cp *.pdf $out/
-              echo '${generateRedirects ./redirects.toml}' > $out/_redirects
+              echo '${generateRedirectsFromList redirects}' > $out/_redirects
               runHook postInstall
             '';
           };
