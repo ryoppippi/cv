@@ -6,35 +6,22 @@ This repository contains my CV/Resume in PDF format, automatically built and dep
 
 ### Prerequisites
 
-- [Bun](https://bun.sh) (latest version)
-- [Typst](https://typst.app) (for compiling the CV)
-
-### Installation
-
-```bash
-bun install
-```
+- [Nix](https://nixos.org/) with flakes enabled
 
 ### Development
 
 Watch for changes and recompile automatically:
 
 ```bash
-bun run dev
+nix develop -c bun run dev
 ```
 
 ### Build
 
-Compile the CV to PDF:
-
-```bash
-bun run compile
-```
-
 Build for deployment:
 
 ```bash
-bun run build
+./scripts/build.ts
 ```
 
 ### Update GitHub Stars
@@ -42,7 +29,7 @@ bun run build
 Update star counts for featured projects:
 
 ```bash
-GITHUB_TOKEN=your_token bun run update-stars
+GITHUB_TOKEN=your_token ./scripts/update-stars.ts
 ```
 
 ## 📁 Project Structure
@@ -53,7 +40,7 @@ GITHUB_TOKEN=your_token bun run update-stars
 ├── alta-typst.typ        # Typography template
 ├── ibm-sans/             # Font files
 ├── icons/                # SVG icons
-├── scripts/              # Build scripts
+├── scripts/              # Build scripts (with nix shebang)
 ├── _redirects            # Netlify redirect rules
 └── dist/                 # Build output (generated)
 ```
