@@ -1,4 +1,9 @@
 {
+  nixConfig = {
+    extra-substituters = [ "https://wrangler.cachix.org" ];
+    extra-trusted-public-keys = [ "wrangler.cachix.org-1:N/FIcG2qBQcolSpklb2IMDbsfjZKWg+ctxx0mSMXdSs=" ];
+  };
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     wrangler.url = "github:emrldnix/wrangler";
