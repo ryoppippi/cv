@@ -165,6 +165,7 @@
               typst
               qpdf
               bun
+              typos-lsp
             ];
             shellHook = ''
               export TYPST_FONT_PATHS="${ibmPlexFonts}/share/fonts/opentype"
