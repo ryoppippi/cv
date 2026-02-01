@@ -1,19 +1,27 @@
 {
   nixConfig = {
     extra-substituters = [ "https://wrangler.cachix.org" ];
-    extra-trusted-public-keys = [ "wrangler.cachix.org-1:N/FIcG2qBQcolSpklb2IMDbsfjZKWg+ctxx0mSMXdSs=" ];
+    extra-trusted-public-keys = [
+      "wrangler.cachix.org-1:N/FIcG2qBQcolSpklb2IMDbsfjZKWg+ctxx0mSMXdSs="
+    ];
   };
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     wrangler.url = "github:emrldnix/wrangler";
     wrangler.inputs.nixpkgs.follows = "nixpkgs";
+    git-hooks.url = "github:cachix/git-hooks.nix";
+    git-hooks.inputs.nixpkgs.follows = "nixpkgs";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
+    treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
     {
       nixpkgs,
       wrangler,
+      git-hooks,
+      treefmt-nix,
       ...
     }:
     let
@@ -38,8 +46,38 @@
           lines = map formatRedirect redirectsToml.redirects;
         in
         pkgs.lib.concatStringsSep "\n" lines;
+
+      treefmtEval =
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        treefmt-nix.lib.evalModule pkgs {
+          projectRootFile = "flake.nix";
+          programs = {
+            nixfmt.enable = true;
+            deadnix.enable = true;
+            statix.enable = true;
+            typstyle.enable = true;
+          };
+          settings.formatter.oxfmt = {
+            command = "${pkgs.oxfmt}/bin/oxfmt";
+            includes = [
+              "*.md"
+              "*.yml"
+              "*.yaml"
+              "*.json"
+              "*.jsonc"
+              "*.toml"
+              "*.ts"
+            ];
+            excludes = [ ];
+          };
+        };
     in
     {
+      formatter = forAllSystems (system: (treefmtEval system).config.build.wrapper);
+
       packages = forAllSystems (
         system:
         let
@@ -54,7 +92,7 @@
             src = pkgs.lib.cleanSourceWith {
               src = ./.;
               filter =
-                path: type:
+                path: _type:
                 let
                   baseName = baseNameOf path;
                 in
@@ -92,8 +130,26 @@
         let
           pkgs = nixpkgs.legacyPackages.${system};
           ibmPlexFonts = pkgs.ibm-plex;
+          pre-commit-check = git-hooks.lib.${system}.run {
+            src = ./.;
+            hooks = {
+              gitleaks = {
+                enable = true;
+                entry = "${pkgs.gitleaks}/bin/gitleaks protect --staged --config .gitleaks.toml";
+              };
+              treefmt = {
+                enable = true;
+                entry = "${(treefmtEval system).config.build.wrapper}/bin/treefmt --fail-on-change --no-cache";
+                pass_filenames = false;
+              };
+            };
+          };
         in
         {
+          inherit pre-commit-check;
+
+          formatting = (treefmtEval system).config.build.check ./.;
+
           pdf-page-count =
             pkgs.runCommand "check-pdf-pages"
               {
@@ -104,7 +160,7 @@
                 src = pkgs.lib.cleanSourceWith {
                   src = ./.;
                   filter =
-                    path: type:
+                    path: _type:
                     let
                       baseName = baseNameOf path;
                     in
@@ -158,6 +214,20 @@
         let
           pkgs = nixpkgs.legacyPackages.${system};
           ibmPlexFonts = pkgs.ibm-plex;
+          pre-commit-check = git-hooks.lib.${system}.run {
+            src = ./.;
+            hooks = {
+              gitleaks = {
+                enable = true;
+                entry = "${pkgs.gitleaks}/bin/gitleaks protect --staged --config .gitleaks.toml";
+              };
+              treefmt = {
+                enable = true;
+                entry = "${(treefmtEval system).config.build.wrapper}/bin/treefmt --fail-on-change --no-cache";
+                pass_filenames = false;
+              };
+            };
+          };
         in
         {
           default = pkgs.mkShell {
@@ -166,9 +236,11 @@
               qpdf
               bun
               typos-lsp
+              gitleaks
             ];
             shellHook = ''
               export TYPST_FONT_PATHS="${ibmPlexFonts}/share/fonts/opentype"
+              ${pre-commit-check.shellHook}
             '';
           };
         }
