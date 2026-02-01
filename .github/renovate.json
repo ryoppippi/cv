@@ -5,6 +5,9 @@
     "schedule:weekly",
     "group:allNonMajor"
   ],
+  "nix": {
+    "enabled": true
+  },
   "postUpdateOptions": [],
   "vulnerabilityAlerts": {
     "labels": [
