@@ -19,12 +19,6 @@ jobs:
         with:
           github_access_token: ${{ github.token }}
 
-      - name: Cache Nix store
-        uses: nix-community/cache-nix-action@73b9a8bb0bfeab9e5d4ce8c06f1c10fd3e35b402 # v6.0.1
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
-
       - name: Check flake
         run: nix flake check --all-systems --show-trace
 
@@ -43,12 +37,6 @@ jobs:
         uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31.9.0
         with:
           github_access_token: ${{ github.token }}
-
-      - name: Cache Nix store
-        uses: nix-community/cache-nix-action@73b9a8bb0bfeab9e5d4ce8c06f1c10fd3e35b402 # v6.0.1
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
 
       - name: Update star counts
         run: ./scripts/update-stars.ts
@@ -79,12 +67,6 @@ jobs:
         uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31.9.0
         with:
           github_access_token: ${{ github.token }}
-
-      - name: Cache Nix store
-        uses: nix-community/cache-nix-action@73b9a8bb0bfeab9e5d4ce8c06f1c10fd3e35b402 # v6.0.1
-        with:
-          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.lock') }}
-          restore-prefixes-first-match: nix-${{ runner.os }}-
 
       - name: Update star counts
         run: ./scripts/update-stars.ts
