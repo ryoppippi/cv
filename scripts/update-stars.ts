@@ -1,4 +1,7 @@
-#!/usr/bin/env bun
+#!/usr/bin/env nix
+/*
+#! nix shell --inputs-from . nixpkgs#bun -c bun
+*/
 
 import pLimit from "p-limit";
 

@@ -16,8 +16,6 @@ jobs:
 
       - name: Setup Nix
         uses: ./.github/actions/setup-nix
-        with:
-          skip-bun-install: 'true'
 
       - name: Check flake
         run: nix flake check --all-systems --show-trace
