@@ -14,13 +14,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-      - name: Setup Nix
-        uses: ./.github/actions/setup-nix
+      - name: Install Nix
+        uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31.9.0
         with:
-          skip-bun-install: 'true'
+          github_access_token: ${{ github.token }}
 
       - name: Check flake
-        run: nix flake check --all-systems --show-trace
+        run: nix flake check --accept-flake-config --show-trace
 
   deploy:
     runs-on: ubuntu-latest
@@ -33,16 +33,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-      - name: Setup Nix
-        uses: ./.github/actions/setup-nix
+      - name: Install Nix
+        uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31.9.0
+        with:
+          github_access_token: ${{ github.token }}
 
-      - name: Build
-        run: bun run build
+      - name: Update star counts
+        run: ./scripts/update-stars.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Build
+        run: nix build --accept-flake-config
+
       - name: Deploy to Cloudflare Workers
-        run: bunx wrangler deploy
+        run: nix run --accept-flake-config .#deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -58,18 +63,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
-      - name: Setup Nix
-        uses: ./.github/actions/setup-nix
+      - name: Install Nix
+        uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31.9.0
+        with:
+          github_access_token: ${{ github.token }}
 
-      - name: Build
-        run: bun run build
+      - name: Update star counts
+        run: ./scripts/update-stars.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build
+        run: nix build --accept-flake-config
 
       - name: Deploy preview to Cloudflare Workers
         id: deploy
         run: |
-          output=$(bunx wrangler versions upload 2>&1)
+          output=$(nix run --accept-flake-config .#preview 2>&1)
           echo "$output"
           echo "output<<EOF" >> $GITHUB_OUTPUT
           echo "$output" >> $GITHUB_OUTPUT
@@ -83,13 +93,15 @@ jobs:
         with:
           script: |
             const output = `${{ steps.deploy.outputs.output }}`;
-            const versionMatch = output.match(/Version ID:\s*([a-f0-9-]+)/i);
+            const versionMatch = output.match(/Worker Version ID:\s*([a-f0-9-]+)/i);
+            const urlMatch = output.match(/Version Preview URL:\s*(https:\/\/[^\s]+)/i);
             const versionId = versionMatch ? versionMatch[1] : null;
+            const previewUrl = urlMatch ? urlMatch[1] : null;
 
             let body = '## 🚀 Preview Deployment\n\n';
-            if (versionId) {
+            if (versionId && previewUrl) {
               body += `**Version ID:** \`${versionId}\`\n\n`;
-              body += `Preview this version at: https://${versionId}.cv.workers.dev`;
+              body += `Preview this version at: ${previewUrl}`;
             } else {
               body += '```\n' + output + '\n```';
             }

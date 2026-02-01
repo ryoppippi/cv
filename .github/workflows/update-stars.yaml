@@ -21,14 +21,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Nix
-        uses: ./.github/actions/setup-nix
+      - name: Install Nix
+        uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31.9.0
         with:
-          tools: 'bun'
-          skip-bun-install: 'true'
+          github_access_token: ${{ github.token }}
 
       - name: Update star counts
-        run: bun run update-stars
+        run: ./scripts/update-stars.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
