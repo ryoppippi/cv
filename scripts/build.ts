@@ -1,8 +1,3 @@
-#!/usr/bin/env nix
-/*
-#! nix shell --inputs-from . nixpkgs#bun nixpkgs#typst -c bun
-*/
-
 import { $ } from "bun";
 import path from "path";
 
@@ -13,8 +8,8 @@ const distDir = path.join(gitRootPath, "dist");
 $.cwd(gitRootPath);
 
 // Compile typst
-await $`./scripts/update-stars.ts`;
-await $`typst compile ./ryotaro_kimura.typ --font-path ./ibm-sans`;
+await $`bun run update-stars`;
+await $`bun run compile`;
 
 // Setup dist directory
 await $`rm -rf ${distDir}`;
