@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "cloudflare-redirects": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1769982526,
+        "narHash": "sha256-ZPZdvUZtwoa+A+7L+kzLWo3d9WXIHfKkqOFbU/8TcUc=",
+        "owner": "ryoppippi",
+        "repo": "cloudflare-redirects-nix",
+        "rev": "797a7478b517ef17eb5c73d9ca253231113de3bc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ryoppippi",
+        "repo": "cloudflare-redirects-nix",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -128,6 +148,7 @@
     },
     "root": {
       "inputs": {
+        "cloudflare-redirects": "cloudflare-redirects",
         "git-hooks": "git-hooks",
         "nixpkgs": "nixpkgs_2",
         "treefmt-nix": "treefmt-nix",

@@ -7,11 +7,17 @@
   };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    wrangler.url = "github:emrldnix/wrangler";
-    wrangler.inputs.nixpkgs.follows = "nixpkgs";
+    cloudflare-redirects = {
+      url = "github:ryoppippi/cloudflare-redirects-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     git-hooks.url = "github:cachix/git-hooks.nix";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     treefmt-nix.url = "github:numtide/treefmt-nix";
+    wrangler = {
+      url = "github:emrldnix/wrangler";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -20,6 +26,7 @@
       wrangler,
       git-hooks,
       treefmt-nix,
+      cloudflare-redirects,
       ...
     }:
     let
@@ -31,19 +38,7 @@
       ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
 
-      generateRedirects =
-        pkgs:
-        let
-          redirectsToml = pkgs.lib.importTOML ./redirects.toml;
-          formatRedirect =
-            r:
-            let
-              status = if r ? status then toString r.status else "301";
-            in
-            "${r.from} ${r.to} ${status}";
-          lines = map formatRedirect redirectsToml.redirects;
-        in
-        pkgs.lib.concatStringsSep "\n" lines;
+      inherit (cloudflare-redirects.lib) generateRedirects;
 
       treefmtEval =
         system:
@@ -116,7 +111,7 @@
               runHook preInstall
               mkdir -p $out
               cp *.pdf $out/
-              echo '${generateRedirects pkgs}' > $out/_redirects
+              echo '${generateRedirects ./redirects.toml}' > $out/_redirects
               runHook postInstall
             '';
           };
