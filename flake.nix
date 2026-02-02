@@ -48,6 +48,17 @@
         }
       ];
 
+      wranglerConfig = {
+        "$schema" =
+          "https://raw.githubusercontent.com/cloudflare/workers-sdk/refs/heads/main/packages/wrangler/config-schema.json";
+        name = "cv";
+        compatibility_date = "2025-01-29";
+        assets = {
+          directory = ".";
+          not_found_handling = "none";
+        };
+      };
+
       treefmtEval =
         system:
         let
@@ -115,13 +126,18 @@
               runHook postBuild
             '';
 
-            installPhase = ''
-              runHook preInstall
-              mkdir -p $out
-              cp *.pdf $out/
-              echo '${generateRedirectsFromList redirects}' > $out/_redirects
-              runHook postInstall
-            '';
+            installPhase =
+              let
+                wranglerConfigJson = builtins.toJSON wranglerConfig;
+              in
+              ''
+                runHook preInstall
+                mkdir -p $out
+                cp *.pdf $out/
+                echo '${generateRedirectsFromList redirects}' > $out/_redirects
+                echo '${wranglerConfigJson}' > $out/wrangler.json
+                runHook postInstall
+              '';
           };
         }
       );
@@ -259,7 +275,10 @@
             type = "app";
             program = toString (
               pkgs.writeShellScript "deploy" ''
-                ${wranglerPkg}/bin/wrangler deploy
+                tmpdir=$(mktemp -d)
+                trap "rm -rf $tmpdir" EXIT
+                cp -r result/* "$tmpdir/"
+                cd "$tmpdir" && ${wranglerPkg}/bin/wrangler deploy
               ''
             );
           };
@@ -268,7 +287,10 @@
             type = "app";
             program = toString (
               pkgs.writeShellScript "preview" ''
-                ${wranglerPkg}/bin/wrangler versions upload
+                tmpdir=$(mktemp -d)
+                trap "rm -rf $tmpdir" EXIT
+                cp -r result/* "$tmpdir/"
+                cd "$tmpdir" && ${wranglerPkg}/bin/wrangler versions upload
               ''
             );
           };

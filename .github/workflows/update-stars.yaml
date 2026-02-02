@@ -1,9 +1,6 @@
 name: Update Star Counts
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
   schedule:
     # Run daily at 00:00 UTC
@@ -11,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  deployments: write
 
 jobs:
   update-stars:
@@ -44,3 +42,9 @@ jobs:
           git add ryotaro_kimura.typ
           git commit -m "chore: update star counts" -m "Updated star counts for OSS projects"
           git push
+
+  deploy:
+    needs: update-stars
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    uses: ./.github/workflows/deploy.yaml
+    secrets: inherit
