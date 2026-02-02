@@ -12,6 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     git-hooks.url = "github:cachix/git-hooks.nix";
+    nix-filter.url = "github:numtide/nix-filter";
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     treefmt-nix.url = "github:numtide/treefmt-nix";
     wrangler = {
@@ -27,6 +28,7 @@
       git-hooks,
       treefmt-nix,
       cloudflare-redirects,
+      nix-filter,
       ...
     }:
     let
@@ -57,6 +59,14 @@
           directory = ".";
           not_found_handling = "none";
         };
+      };
+
+      cleanedSource = nix-filter {
+        root = ./.;
+        exclude = [
+          ".direnv"
+          "result"
+        ];
       };
 
       treefmtEval =
@@ -101,20 +111,7 @@
             pname = "ryoppippi-cv";
             version = "1.0.0";
 
-            src = pkgs.lib.cleanSourceWith {
-              src = ./.;
-              filter =
-                path: _type:
-                let
-                  baseName = baseNameOf path;
-                in
-                baseName != "dist"
-                && baseName != "result"
-                && baseName != "node_modules"
-                && baseName != "ibm-sans"
-                && baseName != ".direnv"
-                && baseName != "_redirects";
-            };
+            src = cleanedSource;
 
             nativeBuildInputs = [
               pkgs.typst
@@ -174,19 +171,7 @@
                   pkgs.typst
                   pkgs.qpdf
                 ];
-                src = pkgs.lib.cleanSourceWith {
-                  src = ./.;
-                  filter =
-                    path: _type:
-                    let
-                      baseName = baseNameOf path;
-                    in
-                    baseName != "dist"
-                    && baseName != "result"
-                    && baseName != "node_modules"
-                    && baseName != "ibm-sans"
-                    && baseName != ".direnv";
-                };
+                src = cleanedSource;
               }
               ''
                 cp -r $src/* .
@@ -204,7 +189,7 @@
             pkgs.runCommand "check-typos"
               {
                 nativeBuildInputs = [ pkgs.typos ];
-                src = ./.;
+                src = cleanedSource;
               }
               ''
                 cd $src
@@ -216,7 +201,7 @@
             pkgs.runCommand "check-gitleaks"
               {
                 nativeBuildInputs = [ pkgs.gitleaks ];
-                src = ./.;
+                src = cleanedSource;
               }
               ''
                 cd $src

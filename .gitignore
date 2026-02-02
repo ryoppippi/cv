@@ -28,11 +28,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Build output
-dist/
-
-# Dependencies
-node_modules/
 
 # Generated PDF
 *.pdf
