@@ -78,8 +78,8 @@
     === Open Source Projects
 
     ==== AI Tools
-    - #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (#icon("star")10.6k): CLI tool for analysing Claude Code token usage and costs from local JSONL files. Features include daily/monthly/session-based reports, live monitoring, real-time dashboard, model-specific tracking, and cost analysis. Built with TypeScript and designed for incredibly fast and informative insights.
-    - #styled-link("https://github.com/ryoppippi/sitemcp")[SiteMCP] (#icon("star")746): Fetch an entire site and use it as an MCP Server. This tool scrapes pages from a website, converts into markdown files, cache them, and serves them as a local MCP server. It is useful when you ask LLMs to ask questions about a libraries/documentation.
+    - #styled-link("https://github.com/ryoppippi/ccusage")[ccusage] (#icon("star")10.7k): CLI tool for analysing Claude Code token usage and costs from local JSONL files. Features include daily/monthly/session-based reports, live monitoring, real-time dashboard, model-specific tracking, and cost analysis. Built with TypeScript and designed for incredibly fast and informative insights.
+    - #styled-link("https://github.com/ryoppippi/sitemcp")[SiteMCP] (#icon("star")745): Fetch an entire site and use it as an MCP Server. This tool scrapes pages from a website, converts into markdown files, cache them, and serves them as a local MCP server. It is useful when you ask LLMs to ask questions about a libraries/documentation.
     - #styled-link("https://github.com/ryoppippi/curxy")[curxy] (#icon("star")407): Simple proxy worker for using ollama in cursor. If we want to use local LLM models in cursor, we need to have a proxy between local ollama server and remote cursor server. This tool is a simple proxy worker for that.
 
     ==== Web Development / TypeScript Ecosystem
@@ -91,7 +91,7 @@
 
 
     ==== Zig
-    - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")149): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
+    - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")150): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
     - #styled-link("https://github.com/ryoppippi/nyancat.zig")[nyancat.zig] (#icon("star")23): Running `nyancat` in your terminal. Written in Zig.
 
     === Web Development
