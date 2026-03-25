@@ -22,7 +22,7 @@
 
     === AI Engineer \
     _StackOne_\
-    #term[June 2025 --- Feb 2026][Remote]
+    #term[June 2025 --- Feb 2026][Hybrid]
 
     - Making unified API platforms AI-friendly for seamless integration with AI systems
     - Designing and implementing AI-optimised unified API interfaces for HR technology
