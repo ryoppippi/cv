@@ -20,6 +20,14 @@
   [
     == Experience
 
+    === Founding Engineer \
+    _Rork_\
+    #term[Feb 2026 --- Present][Hybrid]
+
+    - Building a vibe coding platform for mobile app development
+    - Designing and implementing AI agent architecture for app generation
+    - Developing UX and core product features end-to-end
+
     === AI Engineer \
     _StackOne_\
     #term[June 2025 --- Feb 2026][Hybrid]
