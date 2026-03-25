@@ -84,16 +84,8 @@
           };
           settings.formatter.oxfmt = {
             command = "${pkgs.oxfmt}/bin/oxfmt";
-            includes = [
-              "*.md"
-              "*.yml"
-              "*.yaml"
-              "*.json"
-              "*.jsonc"
-              "*.toml"
-              "*.ts"
-            ];
-            excludes = [ ];
+            options = [ "--no-error-on-unmatched-pattern" ];
+            includes = [ "*" ];
           };
         };
     in
