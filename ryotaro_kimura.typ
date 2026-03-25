@@ -167,11 +167,5 @@
 
     School of Informatics
 
-    == Other Information
-
-    === Visa Status
-
-    Already have a work permission without restrictions in UK (*spouse visa*)
-
   ],
 )
