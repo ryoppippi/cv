@@ -94,7 +94,7 @@
     - #styled-link("https://github.com/ryoppippi/unplugin-typia")[unplugin-typia] (#icon("star")83): A plugin for bundlers to use `Typia`. `Typia` is a TypeScript validation library which generates logic from TypeScript type. Before this plugin, it was hard to use `Typia` in bundlers like `Vite`, `Webpack`, and `esbuild`. This plugin made a huge impact on the `Typia` ecosystem.
 
     ==== Zig
-    - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")156): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
+    - #styled-link("https://github.com/ryoppippi/zigcv")[zigcv] (#icon("star")157): Zig bindings for OpenCV. This project is a wrapper for OpenCV in Zig. It is a good example of how to use Zig with C++ libraries.
 
     _For a full list of projects, visit #styled-link("https://ryoppippi.com/works/oss")[ryoppippi.com/works/oss]._
 
