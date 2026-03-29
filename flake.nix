@@ -23,6 +23,7 @@
 
   outputs =
     {
+      self,
       nixpkgs,
       wrangler,
       git-hooks,
@@ -246,6 +247,7 @@
         let
           pkgs = nixpkgs.legacyPackages.${system};
           wranglerPkg = wrangler.packages.${system}.default;
+          cv = self.packages.${system}.default;
         in
         {
           deploy = {
@@ -254,7 +256,7 @@
               pkgs.writeShellScript "deploy" ''
                 tmpdir=$(mktemp -d)
                 trap "rm -rf $tmpdir" EXIT
-                cp -r result/* "$tmpdir/"
+                cp -r ${cv}/* "$tmpdir/"
                 cd "$tmpdir" && ${wranglerPkg}/bin/wrangler deploy
               ''
             );
@@ -266,8 +268,17 @@
               pkgs.writeShellScript "preview" ''
                 tmpdir=$(mktemp -d)
                 trap "rm -rf $tmpdir" EXIT
-                cp -r result/* "$tmpdir/"
+                cp -r ${cv}/* "$tmpdir/"
                 cd "$tmpdir" && ${wranglerPkg}/bin/wrangler versions upload
+              ''
+            );
+          };
+
+          pdftext = {
+            type = "app";
+            program = toString (
+              pkgs.writeShellScript "pdftext" ''
+                ${pkgs.poppler-utils}/bin/pdftotext ${cv}/*.pdf -
               ''
             );
           };
